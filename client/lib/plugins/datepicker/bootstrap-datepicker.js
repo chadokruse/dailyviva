@@ -918,9 +918,9 @@
 							case 'datepicker-switch':
 								this.showMode(1);
 								break;
-							case 'prev':
-							case 'next':
-								var dir = DPGlobal.modes[this.viewMode].navStep * (target[0].className === 'prev' ? -1 : 1);
+							case 'prev text-center':
+							case 'next text-center':
+								var dir = DPGlobal.modes[this.viewMode].navStep * (target[0].className === 'prev text-center' ? -1 : 1);
 								switch (this.viewMode){
 									case 0:
 										this.viewDate = this.moveMonth(this.viewDate, dir);

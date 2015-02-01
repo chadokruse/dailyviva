@@ -1830,7 +1830,7 @@ h6 .small,
 .h6 .small {
   font-weight: normal;
   line-height: 1;
-  color: #777777;
+  color: #f3f3f3;
 }
 
 /* line 24, ../sass/bootstrap/_type.scss */
@@ -1977,7 +1977,7 @@ mark,
 
 /* line 102, ../sass/bootstrap/_type.scss */
 .text-muted {
-  color: #777777;
+  color: #f3f3f3;
 }
 
 /* line 5, ../sass/bootstrap/mixins/_text-emphasis.scss */
@@ -2177,7 +2177,7 @@ dd {
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1px dotted #777777;
+  border-bottom: 1px dotted #f3f3f3;
 }
 
 /* line 235, ../sass/bootstrap/_type.scss */
@@ -2206,7 +2206,7 @@ blockquote .small {
   display: block;
   font-size: 80%;
   line-height: 1.428571429;
-  color: #777777;
+  color: #f3f3f3;
 }
 /* line 265, ../sass/bootstrap/_type.scss */
 blockquote footer:before,
@@ -3441,7 +3441,7 @@ table {
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: #777777;
+  color: #f3f3f3;
   text-align: left;
 }
 
@@ -3779,7 +3779,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #555555;
+  color: #cccccc;
 }
 
 /* line 115, ../sass/bootstrap/_forms.scss */
@@ -3790,7 +3790,7 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #555555;
+  color: #cccccc;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -4600,7 +4600,7 @@ select[multiple].input-lg,
 }
 /* line 115, ../sass/bootstrap/_buttons.scss */
 .btn-link[disabled]:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link:focus {
-  color: #777777;
+  color: #f3f3f3;
   text-decoration: none;
 }
 
@@ -4777,7 +4777,7 @@ tbody.collapse.in {
 
 /* line 102, ../sass/bootstrap/_dropdowns.scss */
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
-  color: #777777;
+  color: #f3f3f3;
 }
 /* line 109, ../sass/bootstrap/_dropdowns.scss */
 .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
@@ -4815,7 +4815,7 @@ tbody.collapse.in {
   padding: 3px 20px;
   font-size: 12px;
   line-height: 1.428571429;
-  color: #777777;
+  color: #f3f3f3;
   white-space: nowrap;
 }
 
@@ -5154,7 +5154,7 @@ tbody.collapse.in {
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
-  color: #555555;
+  color: #cccccc;
   text-align: center;
   background-color: #eeeeee;
   border: 1px solid #ccc;
@@ -5278,11 +5278,11 @@ tbody.collapse.in {
 }
 /* line 31, ../sass/bootstrap/_navs.scss */
 .nav > li.disabled > a {
-  color: #777777;
+  color: #f3f3f3;
 }
 /* line 34, ../sass/bootstrap/_navs.scss */
 .nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
-  color: #777777;
+  color: #f3f3f3;
   text-decoration: none;
   background-color: transparent;
   cursor: not-allowed;
@@ -5326,7 +5326,7 @@ tbody.collapse.in {
 }
 /* line 96, ../sass/bootstrap/_navs.scss */
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-  color: #555555;
+  color: #cccccc;
   background-color: #fff;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
@@ -5979,7 +5979,7 @@ tbody.collapse.in {
 }
 /* line 536, ../sass/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-brand {
-  color: #9d9d9d;
+  color: white;
 }
 /* line 538, ../sass/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
@@ -5988,11 +5988,11 @@ tbody.collapse.in {
 }
 /* line 545, ../sass/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-text {
-  color: #9d9d9d;
+  color: white;
 }
 /* line 550, ../sass/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-nav > li > a {
-  color: #9d9d9d;
+  color: white;
 }
 /* line 553, ../sass/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
@@ -6042,7 +6042,7 @@ tbody.collapse.in {
   }
   /* line 614, ../sass/bootstrap/_navbar.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    color: #9d9d9d;
+    color: white;
   }
   /* line 616, ../sass/bootstrap/_navbar.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -6062,7 +6062,7 @@ tbody.collapse.in {
 }
 /* line 642, ../sass/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-link {
-  color: #9d9d9d;
+  color: white;
 }
 /* line 644, ../sass/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-link:hover {
@@ -6070,7 +6070,7 @@ tbody.collapse.in {
 }
 /* line 649, ../sass/bootstrap/_navbar.scss */
 .navbar-inverse .btn-link {
-  color: #9d9d9d;
+  color: white;
 }
 /* line 651, ../sass/bootstrap/_navbar.scss */
 .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link:focus {
@@ -6101,7 +6101,7 @@ tbody.collapse.in {
 }
 /* line 23, ../sass/bootstrap/_breadcrumbs.scss */
 .breadcrumb > .active {
-  color: #777777;
+  color: #f3f3f3;
 }
 
 /* line 4, ../sass/bootstrap/_pagination.scss */
@@ -6167,7 +6167,7 @@ tbody.collapse.in {
 .pagination > .disabled > a,
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
-  color: #777777;
+  color: #f3f3f3;
   background-color: #fff;
   border-color: #ddd;
   cursor: not-allowed;
@@ -6261,7 +6261,7 @@ tbody.collapse.in {
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
-  color: #777777;
+  color: #f3f3f3;
   background-color: #fff;
   cursor: not-allowed;
 }
@@ -6298,11 +6298,11 @@ a.label:hover, a.label:focus {
 
 /* line 44, ../sass/bootstrap/_labels.scss */
 .label-default {
-  background-color: #777777;
+  background-color: #f3f3f3;
 }
 /* line 7, ../sass/bootstrap/mixins/_labels.scss */
 .label-default[href]:hover, .label-default[href]:focus {
-  background-color: #5e5e5e;
+  background-color: #d9d9d9;
 }
 
 /* line 48, ../sass/bootstrap/_labels.scss */
@@ -6362,7 +6362,7 @@ a.label:hover, a.label:focus {
   vertical-align: baseline;
   white-space: nowrap;
   text-align: center;
-  background-color: #777777;
+  background-color: #f3f3f3;
   border-radius: 10px;
 }
 /* line 22, ../sass/bootstrap/_badges.scss */
@@ -6804,7 +6804,7 @@ a.list-group-item:hover, a.list-group-item:focus {
 /* line 64, ../sass/bootstrap/_list-group.scss */
 .list-group-item.disabled, .list-group-item.disabled:hover, .list-group-item.disabled:focus {
   background-color: #eeeeee;
-  color: #777777;
+  color: #f3f3f3;
   cursor: not-allowed;
 }
 /* line 72, ../sass/bootstrap/_list-group.scss */
@@ -6813,7 +6813,7 @@ a.list-group-item:hover, a.list-group-item:focus {
 }
 /* line 75, ../sass/bootstrap/_list-group.scss */
 .list-group-item.disabled .list-group-item-text, .list-group-item.disabled:hover .list-group-item-text, .list-group-item.disabled:focus .list-group-item-text {
-  color: #777777;
+  color: #f3f3f3;
 }
 /* line 81, ../sass/bootstrap/_list-group.scss */
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
@@ -9455,35 +9455,49 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 /*------------------------------------------------------------------------------------
   General Styles
 ------------------------------------------------------------------------------------*/
-/* line 5, ../sass/_views/_calendar.scss */
+/* line 4, ../sass/_views/_calendar.scss */
+body {
+  background: url("/images/bg-gradient.jpg");
+  background-size: cover;
+}
+
+/* line 8, ../sass/_views/_calendar.scss */
 .title {
   margin: 0 auto;
-  width: 700px;
   text-align: center;
 }
 
-/* line 11, ../sass/_views/_calendar.scss */
+/* line 14, ../sass/_views/_calendar.scss */
+.datepicker-inline {
+  width: auto;
+}
+
+/* line 18, ../sass/_views/_calendar.scss */
+table.table-condensed {
+  margin: auto;
+}
+
+/* line 22, ../sass/_views/_calendar.scss */
 .datepicker thead tr:first-child th:hover, .datepicker tfoot tr th:hover {
   background: transparent;
 }
 
-/* line 15, ../sass/_views/_calendar.scss */
+/* line 26, ../sass/_views/_calendar.scss */
 th.prev, th.next {
-  color: #ff7f66;
+  color: #cccccc;
   font-weight: normal;
-  text-align: left !important;
   text-decoration: none;
   font-size: 11px;
   text-transform: uppercase;
   text-align: center !important;
 }
-/* line 23, ../sass/_views/_calendar.scss */
+/* line 33, ../sass/_views/_calendar.scss */
 th.prev:hover, th.next:hover {
-  text-decoration: underline;
+  color: #3e454c;
   background-color: transparent;
 }
 
-/* line 29, ../sass/_views/_calendar.scss */
+/* line 40, ../sass/_views/_calendar.scss */
 .datepicker-switch {
   padding: 10px 0;
   font-size: 48px;
@@ -9492,13 +9506,13 @@ th.prev:hover, th.next:hover {
   color: #6a7783;
 }
 
-/* line 37, ../sass/_views/_calendar.scss */
+/* line 48, ../sass/_views/_calendar.scss */
 tr.dow {
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
 }
 
-/* line 41, ../sass/_views/_calendar.scss */
+/* line 52, ../sass/_views/_calendar.scss */
 th.dow {
   width: 100px;
   padding: 5px 0;
@@ -9511,71 +9525,77 @@ th.dow {
   border-right: none;
 }
 
-/* line 53, ../sass/_views/_calendar.scss */
+/* line 64, ../sass/_views/_calendar.scss */
 td.day {
   color: #3e454c;
 }
-/* line 55, ../sass/_views/_calendar.scss */
+/* line 66, ../sass/_views/_calendar.scss */
 td.day:hover {
   color: #3e454c;
 }
 
-/* line 60, ../sass/_views/_calendar.scss */
+/* line 71, ../sass/_views/_calendar.scss */
 .datepicker table tr td.old, .datepicker table tr td.new {
-  color: #eee;
+  color: #cccccc;
 }
-/* line 62, ../sass/_views/_calendar.scss */
+/* line 73, ../sass/_views/_calendar.scss */
 .datepicker table tr td.old:hover, .datepicker table tr td.new:hover {
   color: #3e454c;
 }
 
-/* line 67, ../sass/_views/_calendar.scss */
+/* line 78, ../sass/_views/_calendar.scss */
 .datepicker table tr td.today, .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover {
-  color: #ff7f66;
-  background-color: transparent;
+  color: white;
+  background-color: #d9d9d9;
   -webkit-animation: cc 1s linear 1s infinite alternate;
   animation: cc 1s linear 1s infinite alternate;
 }
 
 @-webkit-keyframes cc {
   0% {
-    color: #ff7f66;
+    color: white;
   }
   50% {
-    color: #ffaa99;
+    color: #f3f3f3;
   }
   100% {
-    color: #ff7f66;
+    color: white;
   }
 }
 @keyframes cc {
   0% {
-    color: #ff7f66;
+    color: white;
   }
   50% {
-    color: #ffaa99;
+    color: #f3f3f3;
   }
   100% {
-    color: #ff7f66;
+    color: white;
   }
 }
-/* line 90, ../sass/_views/_calendar.scss */
+/* line 101, ../sass/_views/_calendar.scss */
 .datepicker table tr td.today:hover, .datepicker table tr td.today:hover:hover, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today.disabled:hover:hover, .datepicker table tr td.today:focus, .datepicker table tr td.today:hover:focus, .datepicker table tr td.today.disabled:focus, .datepicker table tr td.today.disabled:hover:focus, .datepicker table tr td.today:active, .datepicker table tr td.today:hover:active, .datepicker table tr td.today.disabled:active, .datepicker table tr td.today.disabled:hover:active, .datepicker table tr td.today.active, .datepicker table tr td.today:hover.active, .datepicker table tr td.today.disabled.active, .datepicker table tr td.today.disabled:hover.active, .open .dropdown-toggle.datepicker table tr td.today, .open .dropdown-toggle.datepicker table tr td.today:hover, .open .dropdown-toggle.datepicker table tr td.today.disabled, .open .dropdown-toggle.datepicker table tr td.today.disabled:hover {
   color: white;
-  background-color: #ff7f66;
+  background-color: #e6e6e6;
 }
 
-/* line 96, ../sass/_views/_calendar.scss */
+/* line 107, ../sass/_views/_calendar.scss */
+.datepicker table tr td.day:hover, .datepicker table tr td.day.focused {
+  background: #e6e6e6;
+  cursor: pointer;
+}
+
+/* line 112, ../sass/_views/_calendar.scss */
 .today .day-indicator {
   margin: 0% 15%;
   border-radius: 50%;
 }
 
-/* line 102, ../sass/_views/_calendar.scss */
+/* line 118, ../sass/_views/_calendar.scss */
 td.active {
   background-color: #ff7f66;
 }
-/* line 105, ../sass/_views/_calendar.scss */
+/* line 121, ../sass/_views/_calendar.scss */
 td.active.day .day-indicator {
   background-color: #ff7f66;
   color: white;
@@ -9585,9 +9605,9 @@ td.active.day .day-indicator {
   font-size: .6em;
 }
 
-/* line 116, ../sass/_views/_calendar.scss */
+/* line 132, ../sass/_views/_calendar.scss */
 .datepicker table tr td.active:hover, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active:focus, .datepicker table tr td.active:hover:focus, .datepicker table tr td.active.disabled:focus, .datepicker table tr td.active.disabled:hover:focus, .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active, .open .dropdown-toggle.datepicker table tr td.active, .open .dropdown-toggle.datepicker table tr td.active:hover, .open .dropdown-toggle.datepicker table tr td.active.disabled, .open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
-  background-color: white;
+  background-color: #f3f3f3;
   border-color: white;
   text-shadow: none;
   font-weight: normal !important;
@@ -9595,58 +9615,58 @@ td.active.day .day-indicator {
   border-radius: 0;
 }
 
-/* line 129, ../sass/_views/_calendar.scss */
+/* line 145, ../sass/_views/_calendar.scss */
 .title {
   margin-top: 30px;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-/* line 134, ../sass/_views/_calendar.scss */
+/* line 150, ../sass/_views/_calendar.scss */
 .title a {
   font-size: 13px;
   text-transform: none;
   letter-spacing: normal;
 }
-/* line 140, ../sass/_views/_calendar.scss */
+/* line 156, ../sass/_views/_calendar.scss */
 .title .btn-group .btn {
   margin-left: 5px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 146, ../sass/_views/_calendar.scss */
+/* line 162, ../sass/_views/_calendar.scss */
 .title .btn-group .btn-large {
   margin-left: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 152, ../sass/_views/_calendar.scss */
+/* line 168, ../sass/_views/_calendar.scss */
 .title .btn-group .btn-daily {
   margin-left: 0;
   margin-right: 5px;
 }
 
-/* line 160, ../sass/_views/_calendar.scss */
+/* line 176, ../sass/_views/_calendar.scss */
 #selectors .btn-group {
   display: inline;
 }
-/* line 163, ../sass/_views/_calendar.scss */
+/* line 179, ../sass/_views/_calendar.scss */
 #selectors input[type=radio] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
 
-/* line 170, ../sass/_views/_calendar.scss */
+/* line 186, ../sass/_views/_calendar.scss */
 .subtitle {
   text-transform: uppercase;
   font-size: 11px;
-  color: #999;
+  color: #8a98a7;
 }
 
-/* line 177, ../sass/_views/_calendar.scss */
+/* line 193, ../sass/_views/_calendar.scss */
 .btn.daily-selectors, .btn.occasional-selectors {
   text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
@@ -9654,17 +9674,16 @@ td.active.day .day-indicator {
   max-width: 150px;
   white-space: nowrap;
   overflow: hidden;
-  border: 2px solid #eee;
   font-size: 13px;
   text-transform: none;
 }
-/* line 187, ../sass/_views/_calendar.scss */
+/* line 203, ../sass/_views/_calendar.scss */
 .btn.daily-selectors.active, .btn.occasional-selectors.active {
   box-shadow: none;
   -webkit-box-shadow: none;
 }
 
-/* line 194, ../sass/_views/_calendar.scss */
+/* line 210, ../sass/_views/_calendar.scss */
 .blank-state {
   font-size: 13px;
   text-transform: none;
@@ -9672,35 +9691,35 @@ td.active.day .day-indicator {
   cursor: pointer;
 }
 
-/* line 202, ../sass/_views/_calendar.scss */
+/* line 218, ../sass/_views/_calendar.scss */
 .title.annual {
   margin-top: -20px;
 }
 
-/* line 207, ../sass/_views/_calendar.scss */
+/* line 223, ../sass/_views/_calendar.scss */
 .return {
   position: relative;
   top: -20px;
 }
 
-/* line 212, ../sass/_views/_calendar.scss */
+/* line 228, ../sass/_views/_calendar.scss */
 .add-task {
   text-align: left;
   padding-top: 16px;
   float: left;
 }
 
-/* line 218, ../sass/_views/_calendar.scss */
+/* line 234, ../sass/_views/_calendar.scss */
 .occasional-selectors {
   text-align: right;
   float: right;
 }
-/* line 221, ../sass/_views/_calendar.scss */
+/* line 237, ../sass/_views/_calendar.scss */
 .occasional-selectors a.btn, .occasional-selectors button.btn {
   text-align: right;
 }
 
-/* line 226, ../sass/_views/_calendar.scss */
+/* line 242, ../sass/_views/_calendar.scss */
 #full-year {
   font-size: 12px;
   color: blue;
@@ -9708,7 +9727,7 @@ td.active.day .day-indicator {
   padding-top: 20px;
 }
 
-/* line 233, ../sass/_views/_calendar.scss */
+/* line 249, ../sass/_views/_calendar.scss */
 .buy-us-a-beer {
   margin-top: 50px;
   text-align: center;
@@ -9716,24 +9735,24 @@ td.active.day .day-indicator {
   font-size: 13px;
 }
 
-/* line 240, ../sass/_views/_calendar.scss */
+/* line 256, ../sass/_views/_calendar.scss */
 #annual-return {
   margin: auto 0;
 }
 
-/* line 244, ../sass/_views/_calendar.scss */
+/* line 260, ../sass/_views/_calendar.scss */
 .current_streak, .longest_streak {
   width: 150px;
   float: left;
 }
 
-/* line 248, ../sass/_views/_calendar.scss */
+/* line 264, ../sass/_views/_calendar.scss */
 .current_streak, .longest_streak {
   font-family: Helvetica, Arial, sans-serif;
   text-transform: none;
 }
 
-/* line 253, ../sass/_views/_calendar.scss */
+/* line 269, ../sass/_views/_calendar.scss */
 #zone {
   background: #DFDFDF;
   margin: 5px 0px 10px 0px;
@@ -9741,7 +9760,7 @@ td.active.day .day-indicator {
   text-align: center;
 }
 
-/* line 260, ../sass/_views/_calendar.scss */
+/* line 276, ../sass/_views/_calendar.scss */
 .type {
   display: block;
   font-size: 10px;
@@ -9751,7 +9770,7 @@ td.active.day .day-indicator {
   letter-spacing: 0;
 }
 
-/* line 268, ../sass/_views/_calendar.scss */
+/* line 284, ../sass/_views/_calendar.scss */
 .num {
   display: block;
   font-size: 30px;
@@ -9761,7 +9780,7 @@ td.active.day .day-indicator {
   letter-spacing: -3px;
 }
 
-/* line 276, ../sass/_views/_calendar.scss */
+/* line 292, ../sass/_views/_calendar.scss */
 .num .desc {
   position: relative;
   top: -8px;
@@ -9772,7 +9791,7 @@ td.active.day .day-indicator {
   font-weight: bold;
 }
 
-/* line 286, ../sass/_views/_calendar.scss */
+/* line 302, ../sass/_views/_calendar.scss */
 a {
   color: #00538d;
   text-decoration: none;
@@ -9797,24 +9816,24 @@ a {
 #content{
   width: 700px;
 }*/
-/* line 313, ../sass/_views/_calendar.scss */
+/* line 329, ../sass/_views/_calendar.scss */
 #recentUsers, #userRecords {
   width: 340px;
 }
 
-/* line 317, ../sass/_views/_calendar.scss */
+/* line 333, ../sass/_views/_calendar.scss */
 #recentUsers {
   float: left;
   padding-right: 10px;
 }
 
-/* line 322, ../sass/_views/_calendar.scss */
+/* line 338, ../sass/_views/_calendar.scss */
 #userRecords {
   float: right;
   padding-left: 10px;
 }
 
-/* line 327, ../sass/_views/_calendar.scss */
+/* line 343, ../sass/_views/_calendar.scss */
 .footnote {
   font-size: 11px;
   color: #999;
@@ -9824,13 +9843,13 @@ a {
   text-align: center;
   margin-left: 0;
 }
-/* line 336, ../sass/_views/_calendar.scss */
+/* line 352, ../sass/_views/_calendar.scss */
 .footnote .footnote-mini {
   color: #ccc;
   text-transform: none;
 }
 
-/* line 343, ../sass/_views/_calendar.scss */
+/* line 359, ../sass/_views/_calendar.scss */
 .footnote a:hover {
   text-decoration: underline;
 }
@@ -9839,37 +9858,32 @@ a {
 /*------------------------------------------------------------------------------------
   Calendar Styles (Month View)
 ------------------------------------------------------------------------------------*/
-/* line 350, ../sass/_views/_calendar.scss */
+/* line 366, ../sass/_views/_calendar.scss */
 .center-table {
   margin: 0 auto !important;
   float: none !important;
 }
 
-/* line 355, ../sass/_views/_calendar.scss */
+/* line 371, ../sass/_views/_calendar.scss */
 #calendar {
-  margin: 30px auto 15px auto;
-  padding: 0 0 20px 0;
-  width: 700px;
+  margin: 30px 0;
+  padding: 20px;
   font-family: "Futura", "Gill Sans", Arial, sans-serif;
-  background: #fff;
+  background-color: #f3f3f3;
   font-size: 24px;
   border-top: 2px solid #eee;
   line-height: normal !important;
+  border-radius: 5px;
+  border: 2px solid #8a98a7;
 }
 
-/* line 368, ../sass/_views/_calendar.scss */
+/* line 387, ../sass/_views/_calendar.scss */
 #calendar table {
-  width: 700px;
   border-spacing: none !important;
   border-collapse: collapse;
 }
 
-/* line 374, ../sass/_views/_calendar.scss */
-#calendar table th.prev, #calendar table th.next {
-  text-align: center !important;
-}
-
-/* line 378, ../sass/_views/_calendar.scss */
+/* line 393, ../sass/_views/_calendar.scss */
 #calendar table td .btn, #calendar table td {
   position: relative;
   text-align: center;
@@ -9879,23 +9893,23 @@ a {
   height: 60px;
 }
 
-/* line 386, ../sass/_views/_calendar.scss */
+/* line 401, ../sass/_views/_calendar.scss */
 #calendar table td.otherMonth .btn, #calendar table td.otherMonth {
   color: #ccc;
 }
 
-/* line 390, ../sass/_views/_calendar.scss */
+/* line 405, ../sass/_views/_calendar.scss */
 #calendar tbody td.btn {
   display: table-cell;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 395, ../sass/_views/_calendar.scss */
+/* line 410, ../sass/_views/_calendar.scss */
 #calendar tbody td.btn.today {
   color: #51A351;
 }
-/* line 398, ../sass/_views/_calendar.scss */
+/* line 413, ../sass/_views/_calendar.scss */
 #calendar tbody td.btn.active {
   background-color: #e6e6e6;
   -webkit-border-radius: 50%;
@@ -9939,7 +9953,7 @@ a {
   *background-color: #bd362f;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
-/* line 442, ../sass/_views/_calendar.scss */
+/* line 457, ../sass/_views/_calendar.scss */
 #calendar tbody td.btn.active:hover {
   background-image: none;
   filter: inherit;
@@ -9950,7 +9964,7 @@ a {
 /*------------------------------------------------------------------------------------
   Calendar Styles (Yearly View)
 ------------------------------------------------------------------------------------*/
-/* line 456, ../sass/_views/_calendar.scss */
+/* line 471, ../sass/_views/_calendar.scss */
 #annual {
   margin: 30px auto 15px auto;
   padding: 0 0 20px 0;
@@ -9962,7 +9976,7 @@ a {
   line-height: normal !important;
 }
 
-/* line 467, ../sass/_views/_calendar.scss */
+/* line 482, ../sass/_views/_calendar.scss */
 #annual table {
   width: 100px;
   margin: 0 5px;
@@ -9970,7 +9984,7 @@ a {
   border-collapse: collapse;
 }
 
-/* line 474, ../sass/_views/_calendar.scss */
+/* line 489, ../sass/_views/_calendar.scss */
 #annual table th.monthName {
   padding: 10px 0;
   font-size: 18px;
@@ -9979,7 +9993,7 @@ a {
   color: #005580;
 }
 
-/* line 482, ../sass/_views/_calendar.scss */
+/* line 497, ../sass/_views/_calendar.scss */
 #annual table td .btn, #annual table td {
   position: relative;
   text-align: center;
@@ -9987,24 +10001,24 @@ a {
   vertical-align: top;
 }
 
-/* line 488, ../sass/_views/_calendar.scss */
+/* line 503, ../sass/_views/_calendar.scss */
 #annual table td.otherMonth .btn, #annual table td.otherMonth {
   color: #ccc;
   vertical-align: middle;
 }
 
-/* line 493, ../sass/_views/_calendar.scss */
+/* line 508, ../sass/_views/_calendar.scss */
 #annual tbody td.btn {
   display: table-cell;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 498, ../sass/_views/_calendar.scss */
+/* line 513, ../sass/_views/_calendar.scss */
 #annual tbody td.btn.today {
   color: #51A351;
 }
-/* line 501, ../sass/_views/_calendar.scss */
+/* line 516, ../sass/_views/_calendar.scss */
 #annual tbody td.btn.active {
   /* IE7 inline-block hack */
   *zoom: 1;
@@ -10043,14 +10057,14 @@ a {
   *background-color: #bd362f;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
-/* line 538, ../sass/_views/_calendar.scss */
+/* line 553, ../sass/_views/_calendar.scss */
 #annual tbody td.btn.active:hover {
   background-image: none;
   filter: inherit;
   box-shadow: inherit;
 }
 
-/* line 547, ../sass/_views/_calendar.scss */
+/* line 562, ../sass/_views/_calendar.scss */
 #annual tr.dayName th {
   width: 100px;
   padding: 5px 0;
@@ -10063,7 +10077,7 @@ a {
   border-left: none;
   border-right: none;
 }
-/* line 560, ../sass/_views/_calendar.scss */
+/* line 575, ../sass/_views/_calendar.scss */
 #annual tr.dayName abbr[title] {
   cursor: default;
   border: none;
@@ -10072,12 +10086,12 @@ a {
 /*------------------------------------------------------------------------------------
   @group X Styles
 ------------------------------------------------------------------------------------*/
-/* line 570, ../sass/_views/_calendar.scss */
+/* line 585, ../sass/_views/_calendar.scss */
 .otherMonth .xmarksthespot {
   opacity: 0.2;
 }
 
-/* line 574, ../sass/_views/_calendar.scss */
+/* line 589, ../sass/_views/_calendar.scss */
 .xmarksthespot {
   width: 100px;
   height: 60px;
@@ -10088,22 +10102,22 @@ a {
   background: url(../images/x_1.png) 60% 100% no-repeat;
 }
 
-/* line 584, ../sass/_views/_calendar.scss */
+/* line 599, ../sass/_views/_calendar.scss */
 .x-1 {
   background-image: url(../images/x_1.png);
 }
 
-/* line 585, ../sass/_views/_calendar.scss */
+/* line 600, ../sass/_views/_calendar.scss */
 .x-2 {
   background-image: url(../images/x_2.png);
 }
 
-/* line 586, ../sass/_views/_calendar.scss */
+/* line 601, ../sass/_views/_calendar.scss */
 .x-3 {
   background-image: url(../images/x_3.png);
 }
 
-/* line 588, ../sass/_views/_calendar.scss */
+/* line 603, ../sass/_views/_calendar.scss */
 .today {
   color: green;
 }
@@ -10112,7 +10126,7 @@ a {
 /*------------------------------------------------------------------------------------
   Add or Edit (Settings Page)
 ------------------------------------------------------------------------------------*/
-/* line 597, ../sass/_views/_calendar.scss */
+/* line 612, ../sass/_views/_calendar.scss */
 #settings .form-horizontal .controls, #settings .control-label {
   margin-top: 20px;
 }
@@ -10125,31 +10139,40 @@ a {
 ------------------------------------------------------------------------------------*/
 /* line 25, ../sass/styles.scss */
 .btn-dailyviva {
-  border: 2px solid #eee;
+  border: 2px solid #8a98a7;
+  background-color: transparent;
+  color: #8a98a7;
 }
-/* line 27, ../sass/styles.scss */
-.btn-dailyviva.active {
-  border: 2px solid #ff7f66;
-  background-color: #ff7f66;
+/* line 29, ../sass/styles.scss */
+.btn-dailyviva:hover {
+  border: 2px solid #2c3136;
+  background-color: #3e454c;
   color: white;
 }
-
 /* line 34, ../sass/styles.scss */
+.btn-dailyviva.active {
+  border: 2px solid #2c3136;
+  background-color: #3e454c;
+  color: #ff7f66;
+  cursor: default;
+}
+
+/* line 42, ../sass/styles.scss */
 .blue-light {
   color: #8a98a7 !important;
 }
 
-/* line 38, ../sass/styles.scss */
+/* line 46, ../sass/styles.scss */
 .blue-medium {
   color: #6a7783 !important;
 }
 
-/* line 42, ../sass/styles.scss */
+/* line 50, ../sass/styles.scss */
 .blue-dark {
   color: #3e454c !important;
 }
 
-/* line 46, ../sass/styles.scss */
+/* line 54, ../sass/styles.scss */
 .orange {
   color: #ff7f66 !important;
 }
@@ -10157,47 +10180,47 @@ a {
 /*------------------------------------------------------------------------------------
   Nav Bar
 ------------------------------------------------------------------------------------*/
-/* line 53, ../sass/styles.scss */
+/* line 61, ../sass/styles.scss */
 .navbar {
   height: 35px;
   min-height: inherit;
 }
 
-/* line 57, ../sass/styles.scss */
+/* line 65, ../sass/styles.scss */
 .navbar-nav > li > a {
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-/* line 61, ../sass/styles.scss */
+/* line 69, ../sass/styles.scss */
 .navbar-brand {
   padding: 5px 0 0 0;
   height: inherit;
 }
 
-/* line 66, ../sass/styles.scss */
+/* line 74, ../sass/styles.scss */
 .navbar {
   margin: 0;
   border-radius: 0;
 }
 
-/* line 70, ../sass/styles.scss */
+/* line 78, ../sass/styles.scss */
 .navbar-brand > img {
   display: inline-block;
 }
 
-/* line 75, ../sass/styles.scss */
+/* line 83, ../sass/styles.scss */
 a.brand img {
   vertical-align: 10%;
 }
 
-/* line 80, ../sass/styles.scss */
+/* line 88, ../sass/styles.scss */
 .navbar .nav li a.btn {
   color: white;
 }
 
 /*Fixes signup button hover state. Sure feels like a hack.*/
-/* line 86, ../sass/styles.scss */
+/* line 94, ../sass/styles.scss */
 .navbar .nav > li > a.btn:hover, .nav li a.btn:hover, .nav > li > a.btn:hover {
   background-color: #BD362F;
 }
@@ -10206,7 +10229,7 @@ a.brand img {
 /*------------------------------------------------------------------------------------
   Landing Page
 ------------------------------------------------------------------------------------*/
-/* line 96, ../sass/styles.scss */
+/* line 104, ../sass/styles.scss */
 .content {
   background-color: #fff;
   padding: 20px;
@@ -10220,47 +10243,47 @@ a.brand img {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
-/* line 107, ../sass/styles.scss */
+/* line 115, ../sass/styles.scss */
 #welcome {
   text-align: center;
 }
-/* line 109, ../sass/styles.scss */
+/* line 117, ../sass/styles.scss */
 #welcome.well {
   background-color: transparent;
 }
-/* line 113, ../sass/styles.scss */
+/* line 121, ../sass/styles.scss */
 #welcome .hero-unit {
   background: url(/images/bg.png);
   padding: 40px;
 }
-/* line 118, ../sass/styles.scss */
+/* line 126, ../sass/styles.scss */
 #welcome h1 {
   margin-bottom: 40px;
   font-size: 60px;
   font-weight: bold;
 }
-/* line 124, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 #welcome #screenshots {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-/* line 127, ../sass/styles.scss */
+/* line 135, ../sass/styles.scss */
 #welcome #screenshots .screenshot-left, #welcome #screenshots .screenshot-middle, #welcome #screenshots .screenshot-right {
   margin: 10px;
   box-shadow: 0px 0px 10px #888;
   -moz-box-shadow: 0px 0px 10px #888;
   -webkit-box-shadow: 0px 0px 10px #888;
 }
-/* line 135, ../sass/styles.scss */
+/* line 143, ../sass/styles.scss */
 #welcome #credits {
   font-size: 12px;
   color: #ccc;
 }
-/* line 140, ../sass/styles.scss */
+/* line 148, ../sass/styles.scss */
 #welcome .landing-cta-wrapper {
   position: relative;
 }
-/* line 143, ../sass/styles.scss */
+/* line 151, ../sass/styles.scss */
 #welcome .landing-cta {
   position: relative;
   top: 50%;
@@ -10268,28 +10291,28 @@ a.brand img {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 147, ../sass/styles.scss */
+/* line 155, ../sass/styles.scss */
 #welcome #request-invite {
   padding-top: 20px;
 }
-/* line 150, ../sass/styles.scss */
+/* line 158, ../sass/styles.scss */
 #welcome #request-invite h1 {
   color: #51A351;
   margin-bottom: 0;
 }
-/* line 155, ../sass/styles.scss */
+/* line 163, ../sass/styles.scss */
 #welcome #request-invite .alert-error {
   position: relative;
   top: -15px;
   margin-bottom: 0;
 }
-/* line 162, ../sass/styles.scss */
+/* line 170, ../sass/styles.scss */
 #welcome .help-block {
   font-size: 10px;
   color: gray;
   margin-top: 15px;
 }
-/* line 169, ../sass/styles.scss */
+/* line 177, ../sass/styles.scss */
 #welcome .span4 label {
   font-size: 16px;
   font-weight: bold;
@@ -10297,11 +10320,11 @@ a.brand img {
   position: relative;
   top: -15px;
 }
-/* line 176, ../sass/styles.scss */
+/* line 184, ../sass/styles.scss */
 #welcome .span4.text-only {
   margin-top: 5px;
 }
-/* line 181, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 #welcome #thanks {
   position: relative;
   top: -5px;
@@ -10309,7 +10332,7 @@ a.brand img {
 }
 
 /*AJAX 'loading' indication on buttons */
-/* line 189, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 .btn.loading {
   background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, rgba(0, 0, 0, 0.1)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(0, 0, 0, 0.1)), color-stop(0.75, rgba(0, 0, 0, 0.1)), color-stop(0.75, transparent), to(transparent));
   background-image: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, transparent 75%, transparent);
@@ -10331,7 +10354,7 @@ a.brand img {
 /*------------------------------------------------------------------------------------
   Sign In & Sign Up
 ------------------------------------------------------------------------------------*/
-/* line 226, ../sass/styles.scss */
+/* line 234, ../sass/styles.scss */
 .devise-headers {
   margin-bottom: 25px;
 }
@@ -10340,7 +10363,7 @@ a.brand img {
 /*------------------------------------------------------------------------------------
   Add or Edit
 ------------------------------------------------------------------------------------*/
-/* line 237, ../sass/styles.scss */
+/* line 245, ../sass/styles.scss */
 .add-edit .control-label, .add-edit .controls {
   margin-top: 10px;
 }

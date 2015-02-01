@@ -23,11 +23,19 @@
   Global
 ------------------------------------------------------------------------------------*/
 .btn-dailyviva {
-  border: 2px solid #eee;
-  &.active{
-    border: 2px solid $orange;
-    background-color: $orange;
+  border: 2px solid $blue-light;
+  background-color: transparent;
+  color: $blue-light;
+  &:hover {
+    border: 2px solid $blue-black;
+    background-color: $blue-dark;
     color: white;
+  }
+  &.active{
+    border: 2px solid $blue-black;
+    background-color: $blue-dark;
+    color: $orange;
+    cursor: default;
   }
 }
 

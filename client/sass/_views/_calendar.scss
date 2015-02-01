@@ -1,11 +1,22 @@
 /*------------------------------------------------------------------------------------
   General Styles
 ------------------------------------------------------------------------------------*/
-
+body {
+  background: url('/images/bg-gradient.jpg');
+  background-size: cover;
+}
 .title{
   margin:0 auto;
-  width:700px;
+  //width:700px;
   text-align:center;
+}
+
+.datepicker-inline {
+  width: auto;
+}
+
+table.table-condensed {
+  margin: auto;
 }
 
 .datepicker thead tr:first-child th:hover, .datepicker tfoot tr th:hover {
@@ -13,15 +24,15 @@
 }
 
 th.prev, th.next {
-  color: $orange;
+  color: $gray;
   font-weight:normal;
-  text-align:left !important;
   text-decoration:none;
   font-size:11px;
   text-transform:uppercase;
   text-align: center !important;
   &:hover {
-    text-decoration: underline;
+    //text-decoration: underline;
+    color: $blue-dark;
     background-color: transparent;
   }
 }
@@ -35,8 +46,8 @@ th.prev, th.next {
 }
 
 tr.dow {
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-top: 1px solid $gray;
+  border-bottom: 1px solid $gray;
 }
 th.dow{
 width:100px;
@@ -58,7 +69,7 @@ td.day {
 }
 
 .datepicker table tr td.old, .datepicker table tr td.new {
-  color: #eee;
+  color: $gray;
   &:hover {
     color: $blue-dark;
   }
@@ -66,8 +77,8 @@ td.day {
 
 .datepicker table tr td.today, .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover {
   //border: solid 2px $orange;
-  color: $orange;
-  background-color: transparent;
+  color: white;
+  background-color: darken($gray-light, 10%);
   //border-color: #ffb733;
   -webkit-animation: cc 1s linear 1s infinite alternate;
   animation: cc 1s linear 1s infinite alternate;
@@ -75,22 +86,27 @@ td.day {
 
 @-webkit-keyframes cc
 {
-  0%   { color: $orange;}
-  50%  { color: lighten($orange, 10%);}
-  100% { color: $orange;}
+  0%   { color: white;}
+  50%  { color: $gray-light;}
+  100% { color: white;}
 }
 
 @keyframes cc
 {
-  0%   { color: $orange;}
-  50%  { color: lighten($orange, 10%);}
-  100% { color: $orange;}
+  0%   { color: white;}
+  50%  { color: $gray-light;}
+  100% { color: white;}
 }
 
 .datepicker table tr td.today:hover, .datepicker table tr td.today:hover:hover, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today.disabled:hover:hover, .datepicker table tr td.today:focus, .datepicker table tr td.today:hover:focus, .datepicker table tr td.today.disabled:focus, .datepicker table tr td.today.disabled:hover:focus, .datepicker table tr td.today:active, .datepicker table tr td.today:hover:active, .datepicker table tr td.today.disabled:active, .datepicker table tr td.today.disabled:hover:active, .datepicker table tr td.today.active, .datepicker table tr td.today:hover.active, .datepicker table tr td.today.disabled.active, .datepicker table tr td.today.disabled:hover.active, .open .dropdown-toggle.datepicker table tr td.today, .open .dropdown-toggle.datepicker table tr td.today:hover, .open .dropdown-toggle.datepicker table tr td.today.disabled, .open .dropdown-toggle.datepicker table tr td.today.disabled:hover {
   color: white;
-  background-color: $orange;
+  background-color: darken($gray-light, 5%);
   //border-color: #f59e00;
+}
+
+.datepicker table tr td.day:hover, .datepicker table tr td.day.focused {
+  background: darken($gray-light, 5%);
+  cursor: pointer;
 }
 
 .today .day-indicator {
@@ -114,7 +130,7 @@ td.active {
 }
 
 .datepicker table tr td.active:hover, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active:focus, .datepicker table tr td.active:hover:focus, .datepicker table tr td.active.disabled:focus, .datepicker table tr td.active.disabled:hover:focus, .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active, .open .dropdown-toggle.datepicker table tr td.active, .open .dropdown-toggle.datepicker table tr td.active:hover, .open .dropdown-toggle.datepicker table tr td.active.disabled, .open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
-  background-color: white;
+  background-color: $gray-light;
   //color: lighten($orange, 20%);
   border-color: white;
   text-shadow: none;
@@ -170,7 +186,7 @@ td.active {
 .subtitle{
   text-transform:uppercase;
   font-size:11px;
-  color:#999;
+  color: $blue-light;
 }
 
 .btn {
@@ -181,7 +197,7 @@ td.active {
     max-width: 150px;
     white-space: nowrap;
     overflow: hidden;
-    border: 2px solid #eee;
+    //border: 2px solid #eee;
     font-size: 13px;
     text-transform: none;
     &.active {
@@ -353,26 +369,25 @@ a{
 }
 
 #calendar {
-  margin:30px auto 15px auto;
-  padding:0 0 20px 0;
-  width:700px;
+  margin: 30px 0;
+  padding: 20px;
+  //width:700px;
   font-family: "Futura", "Gill Sans", Arial, sans-serif;
-  background:#fff;
+  //background:#fff;
+  background-color: $gray-light;
   font-size:24px;
   border-top:2px solid #eee;
   //border-bottom:1px solid #eee;
   line-height: normal !important;
+  border-radius: 5px;
+  border: 2px solid $blue-light;
 }
 
 
 #calendar table{
-  width:700px;
+  //width:700px;
   border-spacing:none !important;
   border-collapse:collapse;
-}
-
-#calendar table th.prev, #calendar table th.next{
-  text-align: center !important;
 }
 
 #calendar table td .btn, #calendar table td{
