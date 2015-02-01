@@ -22,10 +22,32 @@
 /*------------------------------------------------------------------------------------
   Global
 ------------------------------------------------------------------------------------*/
+#iron-router-progress {
+  background-color : $orange;
+  box-shadow       : 0 0 5px $orange;
+}
+
+#iron-router-progress.spinner:before {
+    border-color : $orange;
+}
+
+.btn-primary {
+  &:hover {
+    background-color: $orange !important;
+    border-color: transparent !important;
+  }
+}
+
+.btn-link {
+  &:hover {
+    color: $orange !important;
+  }
+}
+
 .btn-dailyviva {
-  border: 2px solid $blue-light;
+  border: 2px solid $blue-medium;
   background-color: transparent;
-  color: $blue-light;
+  color: $blue-medium;
   &:hover {
     border: 2px solid $blue-black;
     background-color: $blue-dark;
@@ -58,41 +80,17 @@
 /*------------------------------------------------------------------------------------
   Nav Bar
 ------------------------------------------------------------------------------------*/
-.navbar {
-    height: 35px;
-    min-height: inherit;
-}
-.navbar-nav > li > a {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-.navbar-brand {
-    padding:5px 0 0 0;
-    height: inherit;
-}
-
-.navbar {
-  margin:0;
-  border-radius: 0;
-}
 .navbar-brand > img {
   display: inline-block;
 }
 
-a.brand {
-  img {
-    vertical-align: 10%;
-  }
+ul.nav {
+  margin-top: 9px;
 }
 
-.navbar .nav li a.btn {
-  //padding: 2px 6px;
-  color: white;
-}
-
-/*Fixes signup button hover state. Sure feels like a hack.*/
-.navbar .nav > li > a.btn:hover, .nav li a.btn:hover, .nav > li > a.btn:hover  {
-  background-color: #BD362F;
+.navbar-nav > li > a {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 /* @end */
 
@@ -147,6 +145,7 @@ a.brand {
 
   .landing-cta-wrapper {
     position: relative;
+    height: 150px; //bit 'o hackness
   }
   .landing-cta {
     @include vertical-align();

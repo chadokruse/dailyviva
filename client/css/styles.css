@@ -1718,12 +1718,12 @@ textarea {
 
 /* line 48, ../sass/bootstrap/_scaffolding.scss */
 a {
-  color: #333;
+  color: #ff7f66;
   text-decoration: none;
 }
 /* line 52, ../sass/bootstrap/_scaffolding.scss */
 a:hover, a:focus {
-  color: #0d0d0d;
+  color: #ff3f1a;
   text-decoration: underline;
 }
 /* line 58, ../sass/bootstrap/_scaffolding.scss */
@@ -4578,7 +4578,7 @@ select[multiple].input-lg,
 
 /* line 88, ../sass/bootstrap/_buttons.scss */
 .btn-link {
-  color: #333;
+  color: #ff7f66;
   font-weight: normal;
   border-radius: 0;
 }
@@ -4594,7 +4594,7 @@ select[multiple].input-lg,
 }
 /* line 107, ../sass/bootstrap/_buttons.scss */
 .btn-link:hover, .btn-link:focus {
-  color: #0d0d0d;
+  color: #ff3f1a;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -5290,7 +5290,7 @@ tbody.collapse.in {
 /* line 46, ../sass/bootstrap/_navs.scss */
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #333;
+  border-color: #ff7f66;
 }
 /* line 59, ../sass/bootstrap/_navs.scss */
 .nav .nav-divider {
@@ -6123,7 +6123,7 @@ tbody.collapse.in {
   padding: 6px 12px;
   line-height: 1.428571429;
   text-decoration: none;
-  color: #333;
+  color: #ff7f66;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -6145,7 +6145,7 @@ tbody.collapse.in {
 .pagination > li > a:hover, .pagination > li > a:focus,
 .pagination > li > span:hover,
 .pagination > li > span:focus {
-  color: #0d0d0d;
+  color: #ff3f1a;
   background-color: #eeeeee;
   border-color: #ddd;
 }
@@ -6381,7 +6381,7 @@ a.label:hover, a.label:focus {
 }
 /* line 40, ../sass/bootstrap/_badges.scss */
 .list-group-item.active > .badge, .nav-pills > .active > a > .badge {
-  color: #333;
+  color: #ff7f66;
   background-color: #fff;
 }
 /* line 46, ../sass/bootstrap/_badges.scss */
@@ -6483,7 +6483,7 @@ a.badge:hover, a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #333;
+  border-color: #ff7f66;
 }
 
 /* line 9, ../sass/bootstrap/_alerts.scss */
@@ -9791,12 +9791,6 @@ td.active.day .day-indicator {
   font-weight: bold;
 }
 
-/* line 302, ../sass/_views/_calendar.scss */
-a {
-  color: #00538d;
-  text-decoration: none;
-}
-
 /* @end */
 /*------------------------------------------------------------------------------------
   @group Homepage
@@ -9816,24 +9810,24 @@ a {
 #content{
   width: 700px;
 }*/
-/* line 329, ../sass/_views/_calendar.scss */
+/* line 324, ../sass/_views/_calendar.scss */
 #recentUsers, #userRecords {
   width: 340px;
 }
 
-/* line 333, ../sass/_views/_calendar.scss */
+/* line 328, ../sass/_views/_calendar.scss */
 #recentUsers {
   float: left;
   padding-right: 10px;
 }
 
-/* line 338, ../sass/_views/_calendar.scss */
+/* line 333, ../sass/_views/_calendar.scss */
 #userRecords {
   float: right;
   padding-left: 10px;
 }
 
-/* line 343, ../sass/_views/_calendar.scss */
+/* line 338, ../sass/_views/_calendar.scss */
 .footnote {
   font-size: 11px;
   color: #999;
@@ -9843,13 +9837,13 @@ a {
   text-align: center;
   margin-left: 0;
 }
-/* line 352, ../sass/_views/_calendar.scss */
+/* line 347, ../sass/_views/_calendar.scss */
 .footnote .footnote-mini {
   color: #ccc;
   text-transform: none;
 }
 
-/* line 359, ../sass/_views/_calendar.scss */
+/* line 354, ../sass/_views/_calendar.scss */
 .footnote a:hover {
   text-decoration: underline;
 }
@@ -9858,13 +9852,13 @@ a {
 /*------------------------------------------------------------------------------------
   Calendar Styles (Month View)
 ------------------------------------------------------------------------------------*/
-/* line 366, ../sass/_views/_calendar.scss */
+/* line 361, ../sass/_views/_calendar.scss */
 .center-table {
   margin: 0 auto !important;
   float: none !important;
 }
 
-/* line 371, ../sass/_views/_calendar.scss */
+/* line 366, ../sass/_views/_calendar.scss */
 #calendar {
   margin: 30px 0;
   padding: 20px;
@@ -9877,13 +9871,13 @@ a {
   border: 2px solid #8a98a7;
 }
 
-/* line 387, ../sass/_views/_calendar.scss */
+/* line 382, ../sass/_views/_calendar.scss */
 #calendar table {
   border-spacing: none !important;
   border-collapse: collapse;
 }
 
-/* line 393, ../sass/_views/_calendar.scss */
+/* line 388, ../sass/_views/_calendar.scss */
 #calendar table td .btn, #calendar table td {
   position: relative;
   text-align: center;
@@ -9893,23 +9887,23 @@ a {
   height: 60px;
 }
 
-/* line 401, ../sass/_views/_calendar.scss */
+/* line 396, ../sass/_views/_calendar.scss */
 #calendar table td.otherMonth .btn, #calendar table td.otherMonth {
   color: #ccc;
 }
 
-/* line 405, ../sass/_views/_calendar.scss */
+/* line 400, ../sass/_views/_calendar.scss */
 #calendar tbody td.btn {
   display: table-cell;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 410, ../sass/_views/_calendar.scss */
+/* line 405, ../sass/_views/_calendar.scss */
 #calendar tbody td.btn.today {
   color: #51A351;
 }
-/* line 413, ../sass/_views/_calendar.scss */
+/* line 408, ../sass/_views/_calendar.scss */
 #calendar tbody td.btn.active {
   background-color: #e6e6e6;
   -webkit-border-radius: 50%;
@@ -9953,7 +9947,7 @@ a {
   *background-color: #bd362f;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
-/* line 457, ../sass/_views/_calendar.scss */
+/* line 452, ../sass/_views/_calendar.scss */
 #calendar tbody td.btn.active:hover {
   background-image: none;
   filter: inherit;
@@ -9964,7 +9958,7 @@ a {
 /*------------------------------------------------------------------------------------
   Calendar Styles (Yearly View)
 ------------------------------------------------------------------------------------*/
-/* line 471, ../sass/_views/_calendar.scss */
+/* line 466, ../sass/_views/_calendar.scss */
 #annual {
   margin: 30px auto 15px auto;
   padding: 0 0 20px 0;
@@ -9976,7 +9970,7 @@ a {
   line-height: normal !important;
 }
 
-/* line 482, ../sass/_views/_calendar.scss */
+/* line 477, ../sass/_views/_calendar.scss */
 #annual table {
   width: 100px;
   margin: 0 5px;
@@ -9984,7 +9978,7 @@ a {
   border-collapse: collapse;
 }
 
-/* line 489, ../sass/_views/_calendar.scss */
+/* line 484, ../sass/_views/_calendar.scss */
 #annual table th.monthName {
   padding: 10px 0;
   font-size: 18px;
@@ -9993,7 +9987,7 @@ a {
   color: #005580;
 }
 
-/* line 497, ../sass/_views/_calendar.scss */
+/* line 492, ../sass/_views/_calendar.scss */
 #annual table td .btn, #annual table td {
   position: relative;
   text-align: center;
@@ -10001,24 +9995,24 @@ a {
   vertical-align: top;
 }
 
-/* line 503, ../sass/_views/_calendar.scss */
+/* line 498, ../sass/_views/_calendar.scss */
 #annual table td.otherMonth .btn, #annual table td.otherMonth {
   color: #ccc;
   vertical-align: middle;
 }
 
-/* line 508, ../sass/_views/_calendar.scss */
+/* line 503, ../sass/_views/_calendar.scss */
 #annual tbody td.btn {
   display: table-cell;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 513, ../sass/_views/_calendar.scss */
+/* line 508, ../sass/_views/_calendar.scss */
 #annual tbody td.btn.today {
   color: #51A351;
 }
-/* line 516, ../sass/_views/_calendar.scss */
+/* line 511, ../sass/_views/_calendar.scss */
 #annual tbody td.btn.active {
   /* IE7 inline-block hack */
   *zoom: 1;
@@ -10057,14 +10051,14 @@ a {
   *background-color: #bd362f;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
-/* line 553, ../sass/_views/_calendar.scss */
+/* line 548, ../sass/_views/_calendar.scss */
 #annual tbody td.btn.active:hover {
   background-image: none;
   filter: inherit;
   box-shadow: inherit;
 }
 
-/* line 562, ../sass/_views/_calendar.scss */
+/* line 557, ../sass/_views/_calendar.scss */
 #annual tr.dayName th {
   width: 100px;
   padding: 5px 0;
@@ -10077,7 +10071,7 @@ a {
   border-left: none;
   border-right: none;
 }
-/* line 575, ../sass/_views/_calendar.scss */
+/* line 570, ../sass/_views/_calendar.scss */
 #annual tr.dayName abbr[title] {
   cursor: default;
   border: none;
@@ -10086,12 +10080,12 @@ a {
 /*------------------------------------------------------------------------------------
   @group X Styles
 ------------------------------------------------------------------------------------*/
-/* line 585, ../sass/_views/_calendar.scss */
+/* line 580, ../sass/_views/_calendar.scss */
 .otherMonth .xmarksthespot {
   opacity: 0.2;
 }
 
-/* line 589, ../sass/_views/_calendar.scss */
+/* line 584, ../sass/_views/_calendar.scss */
 .xmarksthespot {
   width: 100px;
   height: 60px;
@@ -10102,22 +10096,22 @@ a {
   background: url(../images/x_1.png) 60% 100% no-repeat;
 }
 
-/* line 599, ../sass/_views/_calendar.scss */
+/* line 594, ../sass/_views/_calendar.scss */
 .x-1 {
   background-image: url(../images/x_1.png);
 }
 
-/* line 600, ../sass/_views/_calendar.scss */
+/* line 595, ../sass/_views/_calendar.scss */
 .x-2 {
   background-image: url(../images/x_2.png);
 }
 
-/* line 601, ../sass/_views/_calendar.scss */
+/* line 596, ../sass/_views/_calendar.scss */
 .x-3 {
   background-image: url(../images/x_3.png);
 }
 
-/* line 603, ../sass/_views/_calendar.scss */
+/* line 598, ../sass/_views/_calendar.scss */
 .today {
   color: green;
 }
@@ -10126,7 +10120,7 @@ a {
 /*------------------------------------------------------------------------------------
   Add or Edit (Settings Page)
 ------------------------------------------------------------------------------------*/
-/* line 612, ../sass/_views/_calendar.scss */
+/* line 607, ../sass/_views/_calendar.scss */
 #settings .form-horizontal .controls, #settings .control-label {
   margin-top: 20px;
 }
@@ -10138,18 +10132,40 @@ a {
   Global
 ------------------------------------------------------------------------------------*/
 /* line 25, ../sass/styles.scss */
-.btn-dailyviva {
-  border: 2px solid #8a98a7;
-  background-color: transparent;
-  color: #8a98a7;
+#iron-router-progress {
+  background-color: #ff7f66;
+  box-shadow: 0 0 5px #ff7f66;
 }
-/* line 29, ../sass/styles.scss */
+
+/* line 30, ../sass/styles.scss */
+#iron-router-progress.spinner:before {
+  border-color: #ff7f66;
+}
+
+/* line 35, ../sass/styles.scss */
+.btn-primary:hover {
+  background-color: #ff7f66 !important;
+  border-color: transparent !important;
+}
+
+/* line 42, ../sass/styles.scss */
+.btn-link:hover {
+  color: #ff7f66 !important;
+}
+
+/* line 47, ../sass/styles.scss */
+.btn-dailyviva {
+  border: 2px solid #6a7783;
+  background-color: transparent;
+  color: #6a7783;
+}
+/* line 51, ../sass/styles.scss */
 .btn-dailyviva:hover {
   border: 2px solid #2c3136;
   background-color: #3e454c;
   color: white;
 }
-/* line 34, ../sass/styles.scss */
+/* line 56, ../sass/styles.scss */
 .btn-dailyviva.active {
   border: 2px solid #2c3136;
   background-color: #3e454c;
@@ -10157,22 +10173,22 @@ a {
   cursor: default;
 }
 
-/* line 42, ../sass/styles.scss */
+/* line 64, ../sass/styles.scss */
 .blue-light {
   color: #8a98a7 !important;
 }
 
-/* line 46, ../sass/styles.scss */
+/* line 68, ../sass/styles.scss */
 .blue-medium {
   color: #6a7783 !important;
 }
 
-/* line 50, ../sass/styles.scss */
+/* line 72, ../sass/styles.scss */
 .blue-dark {
   color: #3e454c !important;
 }
 
-/* line 54, ../sass/styles.scss */
+/* line 76, ../sass/styles.scss */
 .orange {
   color: #ff7f66 !important;
 }
@@ -10180,56 +10196,27 @@ a {
 /*------------------------------------------------------------------------------------
   Nav Bar
 ------------------------------------------------------------------------------------*/
-/* line 61, ../sass/styles.scss */
-.navbar {
-  height: 35px;
-  min-height: inherit;
-}
-
-/* line 65, ../sass/styles.scss */
-.navbar-nav > li > a {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-/* line 69, ../sass/styles.scss */
-.navbar-brand {
-  padding: 5px 0 0 0;
-  height: inherit;
-}
-
-/* line 74, ../sass/styles.scss */
-.navbar {
-  margin: 0;
-  border-radius: 0;
-}
-
-/* line 78, ../sass/styles.scss */
+/* line 83, ../sass/styles.scss */
 .navbar-brand > img {
   display: inline-block;
 }
 
-/* line 83, ../sass/styles.scss */
-a.brand img {
-  vertical-align: 10%;
+/* line 87, ../sass/styles.scss */
+ul.nav {
+  margin-top: 9px;
 }
 
-/* line 88, ../sass/styles.scss */
-.navbar .nav li a.btn {
-  color: white;
-}
-
-/*Fixes signup button hover state. Sure feels like a hack.*/
-/* line 94, ../sass/styles.scss */
-.navbar .nav > li > a.btn:hover, .nav li a.btn:hover, .nav > li > a.btn:hover {
-  background-color: #BD362F;
+/* line 91, ../sass/styles.scss */
+.navbar-nav > li > a {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /* @end */
 /*------------------------------------------------------------------------------------
   Landing Page
 ------------------------------------------------------------------------------------*/
-/* line 104, ../sass/styles.scss */
+/* line 102, ../sass/styles.scss */
 .content {
   background-color: #fff;
   padding: 20px;
@@ -10243,47 +10230,48 @@ a.brand img {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
-/* line 115, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 #welcome {
   text-align: center;
 }
-/* line 117, ../sass/styles.scss */
+/* line 115, ../sass/styles.scss */
 #welcome.well {
   background-color: transparent;
 }
-/* line 121, ../sass/styles.scss */
+/* line 119, ../sass/styles.scss */
 #welcome .hero-unit {
   background: url(/images/bg.png);
   padding: 40px;
 }
-/* line 126, ../sass/styles.scss */
+/* line 124, ../sass/styles.scss */
 #welcome h1 {
   margin-bottom: 40px;
   font-size: 60px;
   font-weight: bold;
 }
-/* line 132, ../sass/styles.scss */
+/* line 130, ../sass/styles.scss */
 #welcome #screenshots {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-/* line 135, ../sass/styles.scss */
+/* line 133, ../sass/styles.scss */
 #welcome #screenshots .screenshot-left, #welcome #screenshots .screenshot-middle, #welcome #screenshots .screenshot-right {
   margin: 10px;
   box-shadow: 0px 0px 10px #888;
   -moz-box-shadow: 0px 0px 10px #888;
   -webkit-box-shadow: 0px 0px 10px #888;
 }
-/* line 143, ../sass/styles.scss */
+/* line 141, ../sass/styles.scss */
 #welcome #credits {
   font-size: 12px;
   color: #ccc;
 }
-/* line 148, ../sass/styles.scss */
+/* line 146, ../sass/styles.scss */
 #welcome .landing-cta-wrapper {
   position: relative;
+  height: 150px;
 }
-/* line 151, ../sass/styles.scss */
+/* line 150, ../sass/styles.scss */
 #welcome .landing-cta {
   position: relative;
   top: 50%;
@@ -10291,28 +10279,28 @@ a.brand img {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 155, ../sass/styles.scss */
+/* line 154, ../sass/styles.scss */
 #welcome #request-invite {
   padding-top: 20px;
 }
-/* line 158, ../sass/styles.scss */
+/* line 157, ../sass/styles.scss */
 #welcome #request-invite h1 {
   color: #51A351;
   margin-bottom: 0;
 }
-/* line 163, ../sass/styles.scss */
+/* line 162, ../sass/styles.scss */
 #welcome #request-invite .alert-error {
   position: relative;
   top: -15px;
   margin-bottom: 0;
 }
-/* line 170, ../sass/styles.scss */
+/* line 169, ../sass/styles.scss */
 #welcome .help-block {
   font-size: 10px;
   color: gray;
   margin-top: 15px;
 }
-/* line 177, ../sass/styles.scss */
+/* line 176, ../sass/styles.scss */
 #welcome .span4 label {
   font-size: 16px;
   font-weight: bold;
@@ -10320,11 +10308,11 @@ a.brand img {
   position: relative;
   top: -15px;
 }
-/* line 184, ../sass/styles.scss */
+/* line 183, ../sass/styles.scss */
 #welcome .span4.text-only {
   margin-top: 5px;
 }
-/* line 189, ../sass/styles.scss */
+/* line 188, ../sass/styles.scss */
 #welcome #thanks {
   position: relative;
   top: -5px;
@@ -10332,7 +10320,7 @@ a.brand img {
 }
 
 /*AJAX 'loading' indication on buttons */
-/* line 197, ../sass/styles.scss */
+/* line 196, ../sass/styles.scss */
 .btn.loading {
   background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, rgba(0, 0, 0, 0.1)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(0, 0, 0, 0.1)), color-stop(0.75, rgba(0, 0, 0, 0.1)), color-stop(0.75, transparent), to(transparent));
   background-image: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, transparent 75%, transparent);
@@ -10354,7 +10342,7 @@ a.brand img {
 /*------------------------------------------------------------------------------------
   Sign In & Sign Up
 ------------------------------------------------------------------------------------*/
-/* line 234, ../sass/styles.scss */
+/* line 233, ../sass/styles.scss */
 .devise-headers {
   margin-bottom: 25px;
 }
@@ -10363,7 +10351,7 @@ a.brand img {
 /*------------------------------------------------------------------------------------
   Add or Edit
 ------------------------------------------------------------------------------------*/
-/* line 245, ../sass/styles.scss */
+/* line 244, ../sass/styles.scss */
 .add-edit .control-label, .add-edit .controls {
   margin-top: 10px;
 }
