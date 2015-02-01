@@ -1,0 +1,10 @@
+.DS_Store
+serve/
+*.scssc
+# meteor defaults
+.meteor/local
+.meteor/meteorite
+dump/
+.demeteorized/
+
+settings.json

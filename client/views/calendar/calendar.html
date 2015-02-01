@@ -1,0 +1,39 @@
+<template name="calendar">
+  <div id="calendar-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="selectors" class="title">
+            <p class="subtitle daily pull-left">Daily</p>
+            <p class="subtitle daily pull-right">Occasional</p>
+            <div class="btn-group" data-toggle="buttons">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="daily-wrapper pull-left">
+                    <label class="btn btn-daily btn-dailyviva active daily-selectors">
+                      <input type="radio" name="routine" id="daily-1" autocomplete="off" checked /> Ate Popcorn
+                    </label>
+                    <label class="btn btn-daily daily-selectors blue-light">
+                      <input type="radio" name="routine" id="daily-1" autocomplete="off" /> <i class="fa fa-plus-circle"></i> Add
+                    </label>
+                  </div>
+                  <div class="occasional-wrapper text-right">
+                    <label class="btn btn-daily btn-dailyviva daily-selectors" for="occasional-1">
+                      <input type="radio" name="routine" id="occasional-1" autocomplete="off"/> Got Sick
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="calendar">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

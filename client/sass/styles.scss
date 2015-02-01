@@ -1,0 +1,240 @@
+@import "bootstrap-compass";
+@import "bootstrap-mincer";
+@import "bootstrap-sprockets";
+@import "bootstrap-variables";
+@import "bootstrap";
+@import "datepicker";
+
+@import "_views/calendar";
+
+/*------------------------------------------------------------------------------------
+  Mixins
+------------------------------------------------------------------------------------*/
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/*------------------------------------------------------------------------------------
+  Global
+------------------------------------------------------------------------------------*/
+.btn-dailyviva {
+  border: 2px solid #eee;
+  &.active{
+    border: 2px solid $orange;
+    background-color: $orange;
+    color: white;
+  }
+}
+
+.blue-light {
+  color: $blue-light !important;
+}
+
+.blue-medium {
+  color: $blue-medium !important;
+}
+
+.blue-dark {
+  color: $blue-dark !important;
+}
+
+.orange {
+  color: $orange !important;
+}
+
+/*------------------------------------------------------------------------------------
+  Nav Bar
+------------------------------------------------------------------------------------*/
+.navbar {
+    height: 35px;
+    min-height: inherit;
+}
+.navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.navbar-brand {
+    padding:5px 0 0 0;
+    height: inherit;
+}
+
+.navbar {
+  margin:0;
+  border-radius: 0;
+}
+.navbar-brand > img {
+  display: inline-block;
+}
+
+a.brand {
+  img {
+    vertical-align: 10%;
+  }
+}
+
+.navbar .nav li a.btn {
+  //padding: 2px 6px;
+  color: white;
+}
+
+/*Fixes signup button hover state. Sure feels like a hack.*/
+.navbar .nav > li > a.btn:hover, .nav li a.btn:hover, .nav > li > a.btn:hover  {
+  background-color: #BD362F;
+}
+/* @end */
+
+/*------------------------------------------------------------------------------------
+  Landing Page
+------------------------------------------------------------------------------------*/
+
+
+.content {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+#welcome {
+  text-align: center;
+  &.well {
+    background-color: transparent;
+  }
+
+  .hero-unit {
+    background: url(/images/bg.png);
+    padding: 40px;
+  }
+
+  h1 {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  #screenshots {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    .screenshot-left, .screenshot-middle, .screenshot-right {
+    margin: 10px;
+      box-shadow: 0px 0px 10px #888;
+      -moz-box-shadow: 0px 0px 10px #888;
+      -webkit-box-shadow: 0px 0px 10px #888;
+    }
+  }
+
+  #credits {
+    font-size: 12px;
+    color: #ccc;
+  }
+
+  .landing-cta-wrapper {
+    position: relative;
+  }
+  .landing-cta {
+    @include vertical-align();
+  }
+
+  #request-invite {
+    padding-top: 20px;
+
+    h1 {
+      color: #51A351;
+      margin-bottom: 0;
+    }
+
+    .alert-error {
+      position: relative;
+      top: -15px;
+      margin-bottom: 0;
+    }
+  }
+
+  .help-block {
+    font-size: 10px;
+    color: gray;
+    margin-top: 15px;
+  }
+
+  .span4 {
+    label {
+      font-size: 16px;
+      font-weight: bold;
+      color: #bd362f;
+      position: relative;
+      top: -15px;
+    }
+    &.text-only {
+      margin-top: 5px;
+    }
+  }
+
+  #thanks {
+    position: relative;
+    top: -5px;
+    left: 5px;
+  }
+}
+
+/*AJAX 'loading' indication on buttons */
+.btn.loading {
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%,
+        color-stop(.25, rgba(0, 0, 0, .10)),
+        color-stop(.25, transparent),
+        color-stop(.5, transparent),
+        color-stop(.5, rgba(0, 0, 0, .10)),
+        color-stop(.75, rgba(0, 0, 0, .10)),
+        color-stop(.75, transparent),
+        to(transparent));
+    background-image:
+        -moz-linear-gradient(-45deg,
+            rgba(0, 0, 0, .10) 25%,
+            transparent 25%,
+            transparent 50%, rgba(0, 0, 0, .10) 50%,
+            rgba(0, 0, 0, .10) 75%,
+            transparent 75%, transparent
+        );
+    background-size: 50px 50px;
+    -moz-background-size: 50px 50px;
+    -webkit-background-size: 50px 50px;
+    -webkit-animation: animate-stripes 2s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+    from {
+        background-position: 0 0;
+    }
+    to {
+       background-position: -50px 0;
+    }
+}
+/* @end */
+
+/*------------------------------------------------------------------------------------
+  Sign In & Sign Up
+------------------------------------------------------------------------------------*/
+
+.devise-headers {
+  margin-bottom: 25px;
+}
+
+/* @end */
+
+/*------------------------------------------------------------------------------------
+  Add or Edit
+------------------------------------------------------------------------------------*/
+
+.add-edit {
+  .control-label, .controls {
+    margin-top: 10px;
+  }
+}
