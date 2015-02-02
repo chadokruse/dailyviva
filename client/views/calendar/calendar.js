@@ -1,5 +1,5 @@
 Template.calendar.created = function () {
-  $('#calendar').datepicker('setDates', Session.get('days'));
+  //$('#calendar').datepicker('setDates', Session.get('days'));
 };
 
 Template.calendar.rendered = function () {
@@ -12,7 +12,7 @@ Template.calendar.rendered = function () {
   });
 
   Tracker.autorun(function () {
-    $('#calendar').datepicker('setDates', Session.get('days'));
+    //$('#calendar').datepicker('setDates', Session.get('days'));
     //Tracker.afterFlush(function () {
       //var q = Routines.findOne({_id: Session.get('routineId')});
       //console.log(q);
@@ -27,14 +27,24 @@ Template.calendar.rendered = function () {
       var id = Session.get('routineId');
       var day = e.date; //"latest date picked"
       //console.log('Deselected: ' + selectedDate);
-      console.log('Date: ' + e.date);
       var countBefore = Session.get('count');
       var countAfter = $('#calendar').datepicker('getDates').length;
       console.log('CountBefore: ' + countBefore);
       console.log('CountAfter: ' + countAfter);
       //var q = $('#calendar').data().datepicker;
-      var deselectedId = $('#calendar').data().datepicker.viewDate;
-      console.log('targetDate: ' + deselectedId);
+      var viewDate = $('#calendar').data().datepicker.viewDate;
+
+      var date = viewDate;
+var targetTime = new Date(date);
+var timeZoneFromDB = -7.00; //time zone value from database
+//get the timezone offset from local time in minutes
+//var tzDifference = timeZoneFromDB * 60 + targetTime.getTimezoneOffset();
+var tzDifference = targetTime.getTimezoneOffset();
+//convert the offset to milliseconds, add to targetTime, and make a new Date
+var deselectedId = new Date(targetTime.getTime() + tzDifference * 60 * 1000);
+
+      console.log('viewDate: ' + deselectedId);
+      console.log('e.date: ' + e.date);
       //alert("myObject is " + q.toSource());
       //console.log(JSON.stringify(q,null, 4));
       //console.log('Valueof: ' + e.date.valueOf());
@@ -51,7 +61,7 @@ Template.calendar.rendered = function () {
         Meteor.call('removeDay', id, deselectedId, function (error, result) {});
       } else {
         console.log('Action: ADD');
-        Meteor.call('addDay', id, day, function (error, result) {});
+        Meteor.call('addDay', id, deselectedId, function (error, result) {});
       }
       Session.set('count', countAfter);
       return false;
@@ -60,9 +70,15 @@ Template.calendar.rendered = function () {
 
 Template.calendar.helpers({
   days: function () {
-    var q = Routines.findOne({_id: Session.get('routineId')});
-    console.log(q);
-    Session.set('days', q);
+    var q;
+    q = Routines.findOne({_id: Session.get('routineId')});
+    if (q) {
+      console.log(q.days);
+      Session.set('days', q.days);
+      //$('#calendar').datepicker('setDates', Session.get('days'));
+      $('#calendar').datepicker('setDates', q.days);
+    }
+    return false;
   }
 });
 
