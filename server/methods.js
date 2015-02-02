@@ -6,7 +6,7 @@ Meteor.methods({
     Routines.update({ _id: id }, {$addToSet: { days: day }});
   },
   removeDay: function (id, deselectedId) {
-    console.log('Method called: addDay');
+    console.log('Method called: removeDay');
     console.log(id);
     console.log(deselectedId);
     Routines.update({ _id: id }, {$pull: { days: deselectedId }});
