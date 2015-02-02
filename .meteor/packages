@@ -8,3 +8,4 @@ meteor-platform
 natestrauser:font-awesome
 iron:router
 multiply:iron-router-progress
+momentjs:moment

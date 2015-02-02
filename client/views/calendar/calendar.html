@@ -10,17 +10,24 @@
               <div class="row">
                 <div class="col-xs-12">
                   <div class="daily-wrapper pull-left">
-                    <label class="btn btn-daily btn-dailyviva active daily-selectors">
-                      <input type="radio" name="routine" id="daily-1" autocomplete="off" checked /> Ate Popcorn
-                    </label>
+                    {{#each routinesDaily}}
+                      <label class="js-routine-select btn btn-daily btn-dailyviva active daily-selectors" data-id="{{_id}}">
+                        <input type="radio" name="routine" id="daily-1" autocomplete="off" checked /> {{name}}
+                      </label>
+                    {{/each}}
                     <label class="btn btn-daily btn-dailyviva daily-selectors">
-                      <input type="radio" name="routine" id="daily-1" autocomplete="off" /> <i class="fa fa-plus-circle"></i> Add
+                      <input type="radio" name="routine" id="daily-1" autocomplete="off" />Add <i class="fa fa-plus-circle"></i>
                     </label>
                   </div>
                   <div class="occasional-wrapper text-right">
-                    <label class="btn btn-daily btn-dailyviva daily-selectors" for="occasional-1">
-                      <input type="radio" name="routine" id="occasional-1" autocomplete="off"/> Got Sick
+                    <label class="btn btn-daily btn-dailyviva daily-selectors">
+                      <input type="radio" name="routine" id="daily-1" autocomplete="off" /><i class="fa fa-plus-circle"></i> Add
                     </label>
+                    {{#each routinesOccasional}}
+                      <label class="js-routine-select btn btn-daily btn-dailyviva daily-selectors" data-id="{{_id}}">
+                        <input type="radio" name="routine" id="occasional-1" autocomplete="off"/> {{name}}
+                      </label>
+                    {{/each}}
                   </div>
                 </div>
               </div>
