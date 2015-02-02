@@ -29,7 +29,8 @@ Template.calendar.rendered = function () {
       console.log('Date: ' + e.date);
       var countBefore = Session.get('count');
       var countAfter = $('#calendar').datepicker('getDates').length;
-      console.log('Count: ' + countAfter);
+      console.log('CountBefore: ' + countBefore);
+      console.log('CountAfter: ' + countAfter);
       //var q = $('#calendar').data().datepicker;
       var deselectedId = $('#calendar').data().datepicker.viewDate;
       console.log('targetDate: ' + deselectedId);
@@ -51,7 +52,7 @@ Template.calendar.rendered = function () {
         console.log('Action: ADD');
         Meteor.call('addDay', id, day, function (error, result) {});
       }
-      Session.set('count', countBefore);
+      Session.set('count', countAfter);
       return false;
   });
 };
