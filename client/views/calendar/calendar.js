@@ -3,6 +3,7 @@ Template.calendar.created = function () {
 };
 
 Template.calendar.rendered = function () {
+  $('[data-toggle="tooltip"]').tooltip();
   $('#calendar').datepicker({
     //todayBtn: "linked",
     multidate: true,
