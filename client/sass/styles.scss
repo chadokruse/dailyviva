@@ -4,6 +4,7 @@
 @import "bootstrap-variables";
 @import "bootstrap";
 @import "datepicker";
+@import "sweet-alert";
 
 @import "_views/calendar";
 
@@ -29,6 +30,10 @@
 
 #iron-router-progress.spinner:before {
     border-color : $orange;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .btn-primary {
@@ -58,6 +63,23 @@
     background-color: $blue-dark;
     color: $orange;
     cursor: default;
+  }
+}
+
+.btn-link-blue-light {
+  color: #8a98a7 !important;
+  background: transparent;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-link-gray-light {
+  color: $gray-light !important;
+  background: transparent;
+  &:hover {
+    color: $blue-dark !important;
+    text-decoration: none;
   }
 }
 
