@@ -1610,9 +1610,9 @@
 		},
 		headTemplate: '<thead>'+
 							'<tr>'+
-								'<th colspan="2" class="prev text-center">PREVIOUS MONTH</th>'+
+								'<th colspan="2" class="prev text-center">PREVIOUS</th>'+
 								'<th colspan="3" class="datepicker-switch"></th>'+
-								'<th colspan="2" class="next text-center">NEXT MONTH</th>'+
+								'<th colspan="2" class="next text-center">NEXT</th>'+
 							'</tr>'+
 						'</thead>',
 		contTemplate: '<tbody><tr><td colspan="7"></td></tr></tbody>',
