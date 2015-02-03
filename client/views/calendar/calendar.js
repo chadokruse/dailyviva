@@ -26,7 +26,6 @@ Template.calendar.rendered = function () {
   $('#calendar').on('changeDate', function (e){
       var id = Session.get('routineId');
       var day = e.date; //"latest date picked"
-      //console.log('Deselected: ' + selectedDate);
       var countBefore = Session.get('count');
       var countAfter = $('#calendar').datepicker('getDates').length;
       console.log('CountBefore: ' + countBefore);
@@ -35,26 +34,15 @@ Template.calendar.rendered = function () {
       var viewDate = $('#calendar').data().datepicker.viewDate;
 
       var date = viewDate;
-var targetTime = new Date(date);
-var timeZoneFromDB = -7.00; //time zone value from database
-//get the timezone offset from local time in minutes
-//var tzDifference = timeZoneFromDB * 60 + targetTime.getTimezoneOffset();
-var tzDifference = targetTime.getTimezoneOffset();
-//convert the offset to milliseconds, add to targetTime, and make a new Date
-var deselectedId = new Date(targetTime.getTime() + tzDifference * 60 * 1000);
+      var targetTime = new Date(date);
+      var timeZoneFromDB = -7.00; //time zone value from database
+      var tzDifference = targetTime.getTimezoneOffset();
+      var deselectedId = new Date(targetTime.getTime() + tzDifference * 60 * 1000);
 
       console.log('viewDate: ' + deselectedId);
       console.log('e.date: ' + e.date);
       //alert("myObject is " + q.toSource());
-      //console.log(JSON.stringify(q,null, 4));
-      //console.log('Valueof: ' + e.date.valueOf());
-      //console.log('Dates Array : ' + e.dates);
-      //var dateVal = $('#calendar').datepicker('getDates');
-      //console.log('getDates :' + dateVal);
-      //if (e.dates.contains(date) !== -1) {
-      //if (!$.inArray(e.date, e.dates)) {
-      //if ($(e.target).hasClass('active')) {
-      //if (day === undefined) {
+      //console.log('Valueof: ' + e.date.valueOf());;
       //if ($.inArray(day, e.dates) != -1) {
       if (countAfter < countBefore) {
         console.log('Action: REMOVE');
@@ -88,6 +76,20 @@ Template.calendar.events({
     var id = $(e.target).data('id');
     console.log(id);
     Router.go('calendar', {view: 'monthly', id: id});
+  },
+  'click .js-add': function (e) {
+    swal({
+      title: 'Easy Tiger!',
+      text: 'You\'ll need a DailyViva account to add more routines. We\'re still in private beta, but hope to open things up in a few weeks. Check back soon!',
+      type: "warning",
+      showCancelButton: false,
+      confirmButtonClass: 'btn-blue-dark',
+      confirmButtonText: 'OK',
+      closeOnConfirm: true
+    },
+    function(){
+      //swal("Deleted!", "Your imaginary file has been deleted.", "success");
+    });
   },
   'click td.active': function (e) {
     console.log('clicked');
