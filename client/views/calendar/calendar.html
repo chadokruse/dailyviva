@@ -15,13 +15,13 @@
                         <input type="radio" name="routine" id="daily-1" autocomplete="off" checked /> {{name}}
                       </label>
                     {{/each}}
-                    <label class="btn btn-daily btn-dailyviva daily-selectors">
-                      <input type="radio" name="routine" id="daily-1" autocomplete="off" />Add <i class="fa fa-plus-circle"></i>
+                    <label class="js-add js-add-daily btn btn-link btn-link-gray-light btn-sm" data-toggle="tooltip" data-animation="true" data-original-title="Click to add a new daily routine" data-container="body">
+                      <!--input type="radio" name="routine" id="daily-1" autocomplete="off" /-->Add <i class="fa fa-plus-circle"></i>
                     </label>
                   </div>
                   <div class="occasional-wrapper text-right">
-                    <label class="btn btn-daily btn-dailyviva daily-selectors">
-                      <input type="radio" name="routine" id="daily-1" autocomplete="off" /><i class="fa fa-plus-circle"></i> Add
+                    <label class="js-add js-add-occasional btn btn-link btn-link-gray-light btn-sm" data-toggle="tooltip" data-animation="true" data-original-title="Click to add something you'd like to track occasionally" data-container="body">
+                      <!--input type="radio" name="routine" id="daily-1" autocomplete="off" /-->Add <i class="fa fa-plus-circle"></i>
                     </label>
                     {{#each routinesOccasional}}
                       <label class="js-routine-select btn btn-daily btn-dailyviva daily-selectors" data-id="{{_id}}">
