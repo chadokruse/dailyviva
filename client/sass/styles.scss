@@ -21,6 +21,14 @@
 }
 
 /*------------------------------------------------------------------------------------
+  Bootstrap 3 Bugs
+------------------------------------------------------------------------------------*/
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+}
+
+/*------------------------------------------------------------------------------------
   Global
 ------------------------------------------------------------------------------------*/
 #iron-router-progress {
@@ -34,6 +42,10 @@
 
 .hidden {
   display: none !important;
+}
+
+.well-landing {
+  background: url(/images/bg.png);
 }
 
 .btn-primary {
@@ -106,6 +118,14 @@
   display: inline-block;
 }
 
+.navbar {
+  .btn-warning {
+    &:hover {
+      background-color: darken($btn-warning-bg, 10%) !important;
+    }
+  }
+}
+
 ul.nav {
   margin-top: 9px;
 }
@@ -114,13 +134,10 @@ ul.nav {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-/* @end */
 
 /*------------------------------------------------------------------------------------
   Landing Page
 ------------------------------------------------------------------------------------*/
-
-
 .content {
   background-color: #fff;
   padding: 20px;
@@ -141,6 +158,7 @@ ul.nav {
   .hero-unit {
     background: url(/images/bg.png);
     padding: 40px;
+    border-radius: 4px;
   }
 
   h1 {
@@ -149,20 +167,17 @@ ul.nav {
     font-weight: bold;
   }
 
-  #screenshots {
+  .screenshots-wrapper {
     margin-top: 25px;
     margin-bottom: 25px;
-    .screenshot-left, .screenshot-middle, .screenshot-right {
-    margin: 10px;
+    .screenshot {
+      width: 300px;
+      height: 200px;
+      margin: 10px;
       box-shadow: 0px 0px 10px #888;
       -moz-box-shadow: 0px 0px 10px #888;
       -webkit-box-shadow: 0px 0px 10px #888;
     }
-  }
-
-  #credits {
-    font-size: 12px;
-    color: #ccc;
   }
 
   .landing-cta-wrapper {
@@ -171,99 +186,5 @@ ul.nav {
   }
   .landing-cta {
     @include vertical-align();
-  }
-
-  #request-invite {
-    padding-top: 20px;
-
-    h1 {
-      color: #51A351;
-      margin-bottom: 0;
-    }
-
-    .alert-error {
-      position: relative;
-      top: -15px;
-      margin-bottom: 0;
-    }
-  }
-
-  .help-block {
-    font-size: 10px;
-    color: gray;
-    margin-top: 15px;
-  }
-
-  .span4 {
-    label {
-      font-size: 16px;
-      font-weight: bold;
-      color: #bd362f;
-      position: relative;
-      top: -15px;
-    }
-    &.text-only {
-      margin-top: 5px;
-    }
-  }
-
-  #thanks {
-    position: relative;
-    top: -5px;
-    left: 5px;
-  }
-}
-
-/*AJAX 'loading' indication on buttons */
-.btn.loading {
-    background-image: -webkit-gradient(linear, 0 0, 100% 100%,
-        color-stop(.25, rgba(0, 0, 0, .10)),
-        color-stop(.25, transparent),
-        color-stop(.5, transparent),
-        color-stop(.5, rgba(0, 0, 0, .10)),
-        color-stop(.75, rgba(0, 0, 0, .10)),
-        color-stop(.75, transparent),
-        to(transparent));
-    background-image:
-        -moz-linear-gradient(-45deg,
-            rgba(0, 0, 0, .10) 25%,
-            transparent 25%,
-            transparent 50%, rgba(0, 0, 0, .10) 50%,
-            rgba(0, 0, 0, .10) 75%,
-            transparent 75%, transparent
-        );
-    background-size: 50px 50px;
-    -moz-background-size: 50px 50px;
-    -webkit-background-size: 50px 50px;
-    -webkit-animation: animate-stripes 2s linear infinite;
-}
-
-@-webkit-keyframes animate-stripes {
-    from {
-        background-position: 0 0;
-    }
-    to {
-       background-position: -50px 0;
-    }
-}
-/* @end */
-
-/*------------------------------------------------------------------------------------
-  Sign In & Sign Up
-------------------------------------------------------------------------------------*/
-
-.devise-headers {
-  margin-bottom: 25px;
-}
-
-/* @end */
-
-/*------------------------------------------------------------------------------------
-  Add or Edit
-------------------------------------------------------------------------------------*/
-
-.add-edit {
-  .control-label, .controls {
-    margin-top: 10px;
   }
 }
