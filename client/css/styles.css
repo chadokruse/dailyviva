@@ -10266,36 +10266,222 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 
 /*------------------------------------------------------------------------------------
-  General Styles
+  Mixins
 ------------------------------------------------------------------------------------*/
-/* line 4, ../sass/_views/_calendar.scss */
-body {
-  background: url("/images/bg-gradient.jpg");
-  background-size: cover;
+/*------------------------------------------------------------------------------------
+  Views
+------------------------------------------------------------------------------------*/
+/* line 1, ../sass/_views/_home.scss */
+#welcome {
+  text-align: center;
+}
+/* line 3, ../sass/_views/_home.scss */
+#welcome.well {
+  background-color: transparent;
+}
+/* line 7, ../sass/_views/_home.scss */
+#welcome .hero-unit {
+  background: url(/images/bg.png);
+  padding: 40px;
+  border-radius: 4px;
+}
+/* line 13, ../sass/_views/_home.scss */
+#welcome h1 {
+  margin-bottom: 40px;
+  font-size: 60px;
+  font-weight: bold;
+}
+/* line 19, ../sass/_views/_home.scss */
+#welcome .well-landing {
+  background: url(/images/bg.png);
+}
+/* line 23, ../sass/_views/_home.scss */
+#welcome .screenshots-wrapper {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+/* line 26, ../sass/_views/_home.scss */
+#welcome .screenshots-wrapper .screenshot {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px #888;
+  -moz-box-shadow: 0px 0px 10px #888;
+  -webkit-box-shadow: 0px 0px 10px #888;
+}
+/* line 36, ../sass/_views/_home.scss */
+#welcome .landing-cta-wrapper {
+  position: relative;
+  height: 150px;
+}
+/* line 40, ../sass/_views/_home.scss */
+#welcome .landing-cta {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-/* line 8, ../sass/_views/_calendar.scss */
-.title {
+/*------------------------------------------------------------------------------------
+  Selector Buttons
+------------------------------------------------------------------------------------*/
+/* line 4, ../sass/_views/_calendar.scss */
+.selectors-wrapper {
   margin: 0 auto;
   text-align: center;
 }
 
+/* line 9, ../sass/_views/_calendar.scss */
+.title {
+  margin-top: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
 /* line 14, ../sass/_views/_calendar.scss */
+.title a {
+  font-size: 13px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+/* line 20, ../sass/_views/_calendar.scss */
+.title .btn-group .btn {
+  margin-left: 5px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 26, ../sass/_views/_calendar.scss */
+.title .btn-group .btn-large {
+  margin-left: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 32, ../sass/_views/_calendar.scss */
+.title .btn-group .btn-daily {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+/* line 40, ../sass/_views/_calendar.scss */
+.selectors-wrapper .btn-group {
+  display: inline;
+}
+/* line 43, ../sass/_views/_calendar.scss */
+.selectors-wrapper input[type=radio] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+
+/* line 50, ../sass/_views/_calendar.scss */
+.subtitle {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #8a98a7;
+}
+
+/* line 57, ../sass/_views/_calendar.scss */
+.btn.daily-selectors, .btn.occasional-selectors {
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 13px;
+  text-transform: none;
+}
+/* line 67, ../sass/_views/_calendar.scss */
+.btn.daily-selectors.active, .btn.occasional-selectors.active {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+/* line 74, ../sass/_views/_calendar.scss */
+.occasional-selectors {
+  text-align: right;
+  float: right;
+}
+/* line 77, ../sass/_views/_calendar.scss */
+.occasional-selectors a.btn, .occasional-selectors button.btn {
+  text-align: right;
+}
+
+/*------------------------------------------------------------------------------------
+  Calendar Styles (Month View)
+------------------------------------------------------------------------------------*/
+/* line 86, ../sass/_views/_calendar.scss */
+#calendar {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #f3f3f3;
+  font-size: 24px;
+  border-top: 2px solid #eee;
+  line-height: normal !important;
+  border-radius: 5px;
+  border: 2px solid #8a98a7;
+}
+
+/* line 97, ../sass/_views/_calendar.scss */
+#calendar table {
+  border-spacing: none !important;
+  border-collapse: collapse;
+}
+
+/* line 103, ../sass/_views/_calendar.scss */
+#calendar table td .btn, #calendar table td {
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  width: 100px;
+  height: 60px;
+}
+
+/* line 112, ../sass/_views/_calendar.scss */
+#calendar table td.otherMonth .btn, #calendar table td.otherMonth {
+  color: #ccc;
+}
+
+/* line 116, ../sass/_views/_calendar.scss */
+#calendar tbody td.btn {
+  display: table-cell;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+/* line 121, ../sass/_views/_calendar.scss */
+#calendar tbody td.btn.today {
+  color: #51A351;
+}
+/* line 124, ../sass/_views/_calendar.scss */
+#calendar tbody td.btn.active {
+  background-color: #e6e6e6;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: none;
+}
+
+/* line 133, ../sass/_views/_calendar.scss */
 .datepicker-inline {
   width: auto;
 }
 
-/* line 18, ../sass/_views/_calendar.scss */
+/* line 137, ../sass/_views/_calendar.scss */
 table.table-condensed {
   margin: auto;
 }
 
-/* line 22, ../sass/_views/_calendar.scss */
+/* line 141, ../sass/_views/_calendar.scss */
 .datepicker thead tr:first-child th:hover, .datepicker tfoot tr th:hover {
   background: transparent;
 }
 
-/* line 26, ../sass/_views/_calendar.scss */
+/* line 145, ../sass/_views/_calendar.scss */
 th.prev, th.next {
   color: #cccccc;
   font-weight: normal;
@@ -10304,13 +10490,13 @@ th.prev, th.next {
   text-transform: uppercase;
   text-align: center !important;
 }
-/* line 33, ../sass/_views/_calendar.scss */
+/* line 152, ../sass/_views/_calendar.scss */
 th.prev:hover, th.next:hover {
   color: #3e454c;
   background-color: transparent;
 }
 
-/* line 40, ../sass/_views/_calendar.scss */
+/* line 159, ../sass/_views/_calendar.scss */
 .datepicker-switch {
   padding: 10px 0;
   font-size: 48px;
@@ -10319,13 +10505,13 @@ th.prev:hover, th.next:hover {
   color: #6a7783;
 }
 
-/* line 48, ../sass/_views/_calendar.scss */
+/* line 167, ../sass/_views/_calendar.scss */
 tr.dow {
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
 }
 
-/* line 52, ../sass/_views/_calendar.scss */
+/* line 171, ../sass/_views/_calendar.scss */
 th.dow {
   width: 100px;
   padding: 5px 0;
@@ -10338,30 +10524,30 @@ th.dow {
   border-right: none;
 }
 
-/* line 64, ../sass/_views/_calendar.scss */
+/* line 183, ../sass/_views/_calendar.scss */
 span.month.active {
   background-color: #8a98a7;
 }
 
-/* line 68, ../sass/_views/_calendar.scss */
+/* line 187, ../sass/_views/_calendar.scss */
 td.day {
   color: #3e454c;
 }
-/* line 70, ../sass/_views/_calendar.scss */
+/* line 189, ../sass/_views/_calendar.scss */
 td.day:hover {
   color: #3e454c;
 }
 
-/* line 75, ../sass/_views/_calendar.scss */
+/* line 194, ../sass/_views/_calendar.scss */
 .datepicker table tr td.old, .datepicker table tr td.new {
   color: #cccccc;
 }
-/* line 77, ../sass/_views/_calendar.scss */
+/* line 196, ../sass/_views/_calendar.scss */
 .datepicker table tr td.old:hover, .datepicker table tr td.new:hover {
   color: #3e454c;
 }
 
-/* line 82, ../sass/_views/_calendar.scss */
+/* line 201, ../sass/_views/_calendar.scss */
 .datepicker table tr td.today, .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover {
   color: white;
   background-color: #d9d9d9;
@@ -10391,29 +10577,29 @@ td.day:hover {
     color: white;
   }
 }
-/* line 105, ../sass/_views/_calendar.scss */
+/* line 222, ../sass/_views/_calendar.scss */
 .datepicker table tr td.today:hover, .datepicker table tr td.today:hover:hover, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today.disabled:hover:hover, .datepicker table tr td.today:focus, .datepicker table tr td.today:hover:focus, .datepicker table tr td.today.disabled:focus, .datepicker table tr td.today.disabled:hover:focus, .datepicker table tr td.today:active, .datepicker table tr td.today:hover:active, .datepicker table tr td.today.disabled:active, .datepicker table tr td.today.disabled:hover:active, .datepicker table tr td.today.active, .datepicker table tr td.today:hover.active, .datepicker table tr td.today.disabled.active, .datepicker table tr td.today.disabled:hover.active, .open .dropdown-toggle.datepicker table tr td.today, .open .dropdown-toggle.datepicker table tr td.today:hover, .open .dropdown-toggle.datepicker table tr td.today.disabled, .open .dropdown-toggle.datepicker table tr td.today.disabled:hover {
   color: white;
   background-color: #e6e6e6;
 }
 
-/* line 111, ../sass/_views/_calendar.scss */
+/* line 227, ../sass/_views/_calendar.scss */
 .datepicker table tr td.day:hover, .datepicker table tr td.day.focused {
   background: #e6e6e6;
   cursor: pointer;
 }
 
-/* line 116, ../sass/_views/_calendar.scss */
+/* line 232, ../sass/_views/_calendar.scss */
 .today .day-indicator {
   margin: 0% 15%;
   border-radius: 50%;
 }
 
-/* line 122, ../sass/_views/_calendar.scss */
+/* line 237, ../sass/_views/_calendar.scss */
 td.active {
   background-color: #ff7f66;
 }
-/* line 125, ../sass/_views/_calendar.scss */
+/* line 240, ../sass/_views/_calendar.scss */
 td.active.day .day-indicator {
   background-color: #ff7f66;
   color: white;
@@ -10423,7 +10609,7 @@ td.active.day .day-indicator {
   font-size: .6em;
 }
 
-/* line 136, ../sass/_views/_calendar.scss */
+/* line 251, ../sass/_views/_calendar.scss */
 .datepicker table tr td.active:hover, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active:focus, .datepicker table tr td.active:hover:focus, .datepicker table tr td.active.disabled:focus, .datepicker table tr td.active.disabled:hover:focus, .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active, .open .dropdown-toggle.datepicker table tr td.active, .open .dropdown-toggle.datepicker table tr td.active:hover, .open .dropdown-toggle.datepicker table tr td.active.disabled, .open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
   background-color: #f3f3f3;
   border-color: white;
@@ -10433,349 +10619,10 @@ td.active.day .day-indicator {
   border-radius: 0;
 }
 
-/* line 149, ../sass/_views/_calendar.scss */
-.title {
-  margin-top: 30px;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-/* line 154, ../sass/_views/_calendar.scss */
-.title a {
-  font-size: 13px;
-  text-transform: none;
-  letter-spacing: normal;
-}
-/* line 160, ../sass/_views/_calendar.scss */
-.title .btn-group .btn {
-  margin-left: 5px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-}
-/* line 166, ../sass/_views/_calendar.scss */
-.title .btn-group .btn-large {
-  margin-left: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-/* line 172, ../sass/_views/_calendar.scss */
-.title .btn-group .btn-daily {
-  margin-left: 0;
-  margin-right: 5px;
-}
-
-/* line 180, ../sass/_views/_calendar.scss */
-#selectors .btn-group {
-  display: inline;
-}
-/* line 183, ../sass/_views/_calendar.scss */
-#selectors input[type=radio] {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-  pointer-events: none;
-}
-
-/* line 190, ../sass/_views/_calendar.scss */
-.subtitle {
-  text-transform: uppercase;
-  font-size: 11px;
-  color: #8a98a7;
-}
-
-/* line 197, ../sass/_views/_calendar.scss */
-.btn.daily-selectors, .btn.occasional-selectors {
-  text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  -webkit-text-overflow: ellipsis;
-  max-width: 150px;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 13px;
-  text-transform: none;
-}
-/* line 207, ../sass/_views/_calendar.scss */
-.btn.daily-selectors.active, .btn.occasional-selectors.active {
-  box-shadow: none;
-  -webkit-box-shadow: none;
-}
-
-/* line 214, ../sass/_views/_calendar.scss */
-.blank-state {
-  font-size: 13px;
-  text-transform: none;
-  letter-spacing: normal;
-  cursor: pointer;
-}
-
-/* line 222, ../sass/_views/_calendar.scss */
-.title.annual {
-  margin-top: -20px;
-}
-
-/* line 227, ../sass/_views/_calendar.scss */
-.return {
-  position: relative;
-  top: -20px;
-}
-
-/* line 232, ../sass/_views/_calendar.scss */
-.add-task {
-  text-align: left;
-  padding-top: 16px;
-  float: left;
-}
-
-/* line 238, ../sass/_views/_calendar.scss */
-.occasional-selectors {
-  text-align: right;
-  float: right;
-}
-/* line 241, ../sass/_views/_calendar.scss */
-.occasional-selectors a.btn, .occasional-selectors button.btn {
-  text-align: right;
-}
-
-/* line 246, ../sass/_views/_calendar.scss */
-#full-year {
-  font-size: 12px;
-  color: blue;
-  text-align: center;
-  padding-top: 20px;
-}
-
-/* line 253, ../sass/_views/_calendar.scss */
-.buy-us-a-beer {
-  margin-top: 50px;
-  text-align: center;
-  text-transform: none;
-  font-size: 13px;
-}
-
-/* line 260, ../sass/_views/_calendar.scss */
-#annual-return {
-  margin: auto 0;
-}
-
-/* line 264, ../sass/_views/_calendar.scss */
-.current_streak, .longest_streak {
-  width: 150px;
-  float: left;
-}
-
-/* line 268, ../sass/_views/_calendar.scss */
-.current_streak, .longest_streak {
-  font-family: Helvetica, Arial, sans-serif;
-  text-transform: none;
-}
-
-/* line 273, ../sass/_views/_calendar.scss */
-#zone {
-  background: #DFDFDF;
-  margin: 5px 0px 10px 0px;
-  padding: 5px 0px 5px 0px;
-  text-align: center;
-}
-
-/* line 280, ../sass/_views/_calendar.scss */
-.type {
-  display: block;
-  font-size: 10px;
-  margin-bottom: 2px;
-  color: #999;
-  text-transform: uppercase;
-  letter-spacing: 0;
-}
-
-/* line 288, ../sass/_views/_calendar.scss */
-.num {
-  display: block;
-  font-size: 30px;
-  font-family: Helvetica, Arial, sans-serif;
-  color: #000;
-  font-weight: bold;
-  letter-spacing: -3px;
-}
-
-/* line 296, ../sass/_views/_calendar.scss */
-.num .desc {
-  position: relative;
-  top: -8px;
-  left: 4px;
-  font-size: 11px;
-  letter-spacing: 0;
-  color: #999;
-  font-weight: bold;
-}
-
-/* @end */
-/*------------------------------------------------------------------------------------
-  @group Homepage
-------------------------------------------------------------------------------------*/
-/*#main, #borderedMain{
-  margin:15px auto 30px auto;
-  padding:0 0 20px 0;
-  width:700px;
-  background:#fff;
-}
-
-#borderedMain{
-  border-top:2px solid #000;
-  border-bottom:1px solid #000;
-}
-
-#content{
-  width: 700px;
-}*/
-/* line 328, ../sass/_views/_calendar.scss */
-#recentUsers, #userRecords {
-  width: 340px;
-}
-
-/* line 332, ../sass/_views/_calendar.scss */
-#recentUsers {
-  float: left;
-  padding-right: 10px;
-}
-
-/* line 337, ../sass/_views/_calendar.scss */
-#userRecords {
-  float: right;
-  padding-left: 10px;
-}
-
-/* line 342, ../sass/_views/_calendar.scss */
-.footnote {
-  font-size: 11px;
-  color: #999;
-  font-family: Helvetica, Arial, sans-serif;
-  line-height: 16px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-left: 0;
-}
-/* line 351, ../sass/_views/_calendar.scss */
-.footnote .footnote-mini {
-  color: #ccc;
-  text-transform: none;
-}
-
-/* line 358, ../sass/_views/_calendar.scss */
-.footnote a:hover {
-  text-decoration: underline;
-}
-
-/* @end */
-/*------------------------------------------------------------------------------------
-  Calendar Styles (Month View)
-------------------------------------------------------------------------------------*/
-/* line 365, ../sass/_views/_calendar.scss */
-.center-table {
-  margin: 0 auto !important;
-  float: none !important;
-}
-
-/* line 370, ../sass/_views/_calendar.scss */
-#calendar {
-  margin: 30px 0;
-  padding: 20px;
-  background-color: #f3f3f3;
-  font-size: 24px;
-  border-top: 2px solid #eee;
-  line-height: normal !important;
-  border-radius: 5px;
-  border: 2px solid #8a98a7;
-}
-
-/* line 385, ../sass/_views/_calendar.scss */
-#calendar table {
-  border-spacing: none !important;
-  border-collapse: collapse;
-}
-
-/* line 391, ../sass/_views/_calendar.scss */
-#calendar table td .btn, #calendar table td {
-  position: relative;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  width: 100px;
-  height: 60px;
-}
-
-/* line 399, ../sass/_views/_calendar.scss */
-#calendar table td.otherMonth .btn, #calendar table td.otherMonth {
-  color: #ccc;
-}
-
-/* line 403, ../sass/_views/_calendar.scss */
-#calendar tbody td.btn {
-  display: table-cell;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-}
-/* line 408, ../sass/_views/_calendar.scss */
-#calendar tbody td.btn.today {
-  color: #51A351;
-}
-/* line 411, ../sass/_views/_calendar.scss */
-#calendar tbody td.btn.active {
-  background-color: #e6e6e6;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  border: none;
-  /* IE7 inline-block hack */
-  *zoom: 1;
-  padding: 4px 10px 4px;
-  margin-bottom: 0;
-  line-height: 18px;
-  *line-height: 20px;
-  text-align: center;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px solid;
-  *border: 0;
-  border-bottom-color: #b3b3b3;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 00px;
-  *margin-left: .3em;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  color: rgba(255, 255, 255, 0.75);
-  border-color: #ccc;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  background-color: #da4e49;
-  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: -ms-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
-  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: linear-gradient(top, #ee5f5b, #bd362f);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEE5F5B', endColorstr='#FFBD362F', GradientType=0);
-  border-color: #bd362f #bd362f #802420;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
-  *background-color: #bd362f;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-}
-/* line 455, ../sass/_views/_calendar.scss */
-#calendar tbody td.btn.active:hover {
-  background-image: none;
-  filter: inherit;
-  box-shadow: inherit;
-}
-
-/* @end */
 /*------------------------------------------------------------------------------------
   Calendar Styles (Yearly View)
 ------------------------------------------------------------------------------------*/
-/* line 469, ../sass/_views/_calendar.scss */
+/* line 264, ../sass/_views/_calendar.scss */
 #annual {
   margin: 30px auto 15px auto;
   padding: 0 0 20px 0;
@@ -10787,7 +10634,7 @@ td.active.day .day-indicator {
   line-height: normal !important;
 }
 
-/* line 480, ../sass/_views/_calendar.scss */
+/* line 275, ../sass/_views/_calendar.scss */
 #annual table {
   width: 100px;
   margin: 0 5px;
@@ -10795,7 +10642,7 @@ td.active.day .day-indicator {
   border-collapse: collapse;
 }
 
-/* line 487, ../sass/_views/_calendar.scss */
+/* line 282, ../sass/_views/_calendar.scss */
 #annual table th.monthName {
   padding: 10px 0;
   font-size: 18px;
@@ -10804,7 +10651,7 @@ td.active.day .day-indicator {
   color: #005580;
 }
 
-/* line 495, ../sass/_views/_calendar.scss */
+/* line 290, ../sass/_views/_calendar.scss */
 #annual table td .btn, #annual table td {
   position: relative;
   text-align: center;
@@ -10812,70 +10659,25 @@ td.active.day .day-indicator {
   vertical-align: top;
 }
 
-/* line 501, ../sass/_views/_calendar.scss */
+/* line 297, ../sass/_views/_calendar.scss */
 #annual table td.otherMonth .btn, #annual table td.otherMonth {
   color: #ccc;
   vertical-align: middle;
 }
 
-/* line 506, ../sass/_views/_calendar.scss */
+/* line 302, ../sass/_views/_calendar.scss */
 #annual tbody td.btn {
   display: table-cell;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 511, ../sass/_views/_calendar.scss */
+/* line 307, ../sass/_views/_calendar.scss */
 #annual tbody td.btn.today {
   color: #51A351;
 }
-/* line 514, ../sass/_views/_calendar.scss */
-#annual tbody td.btn.active {
-  /* IE7 inline-block hack */
-  *zoom: 1;
-  padding: 4px 10px 4px;
-  margin-bottom: 0;
-  line-height: 18px;
-  *line-height: 20px;
-  text-align: center;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px solid;
-  *border: 0;
-  border-bottom-color: #b3b3b3;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 00px;
-  *margin-left: .3em;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  color: rgba(255, 255, 255, 0.75);
-  border-color: #ccc;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  background-color: #da4e49;
-  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: -ms-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
-  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: linear-gradient(top, #ee5f5b, #bd362f);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEE5F5B', endColorstr='#FFBD362F', GradientType=0);
-  border-color: #bd362f #bd362f #802420;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
-  *background-color: #bd362f;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-}
-/* line 551, ../sass/_views/_calendar.scss */
-#annual tbody td.btn.active:hover {
-  background-image: none;
-  filter: inherit;
-  box-shadow: inherit;
-}
 
-/* line 560, ../sass/_views/_calendar.scss */
+/* line 313, ../sass/_views/_calendar.scss */
 #annual tr.dayName th {
   width: 100px;
   padding: 5px 0;
@@ -10888,67 +10690,16 @@ td.active.day .day-indicator {
   border-left: none;
   border-right: none;
 }
-/* line 573, ../sass/_views/_calendar.scss */
+/* line 326, ../sass/_views/_calendar.scss */
 #annual tr.dayName abbr[title] {
   cursor: default;
   border: none;
 }
 
 /*------------------------------------------------------------------------------------
-  @group X Styles
-------------------------------------------------------------------------------------*/
-/* line 583, ../sass/_views/_calendar.scss */
-.otherMonth .xmarksthespot {
-  opacity: 0.2;
-}
-
-/* line 587, ../sass/_views/_calendar.scss */
-.xmarksthespot {
-  width: 100px;
-  height: 60px;
-  position: relative;
-  float: left;
-  margin-top: -60px;
-  z-index: 100;
-  background: url(../images/x_1.png) 60% 100% no-repeat;
-}
-
-/* line 597, ../sass/_views/_calendar.scss */
-.x-1 {
-  background-image: url(../images/x_1.png);
-}
-
-/* line 598, ../sass/_views/_calendar.scss */
-.x-2 {
-  background-image: url(../images/x_2.png);
-}
-
-/* line 599, ../sass/_views/_calendar.scss */
-.x-3 {
-  background-image: url(../images/x_3.png);
-}
-
-/* line 601, ../sass/_views/_calendar.scss */
-.today {
-  color: green;
-}
-
-/* @end */
-/*------------------------------------------------------------------------------------
-  Add or Edit (Settings Page)
-------------------------------------------------------------------------------------*/
-/* line 610, ../sass/_views/_calendar.scss */
-#settings .form-horizontal .controls, #settings .control-label {
-  margin-top: 20px;
-}
-
-/*------------------------------------------------------------------------------------
-  Mixins
-------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------
   Bootstrap 3 Bugs
 ------------------------------------------------------------------------------------*/
-/* line 27, ../sass/styles.scss */
+/* line 32, ../sass/styles.scss */
 .navbar-nav.navbar-right:last-child {
   margin-right: 0;
 }
@@ -10956,51 +10707,52 @@ td.active.day .day-indicator {
 /*------------------------------------------------------------------------------------
   Global
 ------------------------------------------------------------------------------------*/
-/* line 34, ../sass/styles.scss */
+/* line 39, ../sass/styles.scss */
+body {
+  background: url("/images/bg-gradient.jpg");
+  background-size: cover;
+}
+
+/* line 44, ../sass/styles.scss */
 #iron-router-progress {
   background-color: #ff7f66;
   box-shadow: 0 0 5px #ff7f66;
 }
 
-/* line 39, ../sass/styles.scss */
+/* line 49, ../sass/styles.scss */
 #iron-router-progress.spinner:before {
   border-color: #ff7f66;
 }
 
-/* line 43, ../sass/styles.scss */
+/* line 53, ../sass/styles.scss */
 .hidden {
   display: none !important;
 }
 
-/* line 47, ../sass/styles.scss */
-.well-landing {
-  background: url(/images/bg.png);
-}
-
-/* line 52, ../sass/styles.scss */
+/* line 58, ../sass/styles.scss */
 .btn-primary:hover {
   background-color: #ff7f66 !important;
   border-color: transparent !important;
 }
 
-/* line 59, ../sass/styles.scss */
+/* line 65, ../sass/styles.scss */
 .btn-link:hover {
   color: #ff7f66 !important;
 }
 
-/* line 64, ../sass/styles.scss */
+/* line 70, ../sass/styles.scss */
 .btn-dailyviva {
   border: 2px solid #6a7783;
   background-color: transparent;
   color: #6a7783;
 }
-/* line 68, ../sass/styles.scss */
+/* line 74, ../sass/styles.scss */
 .btn-dailyviva:hover {
   border: 2px solid #2c3136;
   background-color: #3e454c;
   color: white;
 }
-/* line 73, ../sass/styles.scss */
+/* line 79, ../sass/styles.scss */
 .btn-dailyviva.active {
   border: 2px solid #2c3136;
   background-color: #3e454c;
@@ -11008,43 +10760,43 @@ td.active.day .day-indicator {
   cursor: default;
 }
 
-/* line 81, ../sass/styles.scss */
+/* line 87, ../sass/styles.scss */
 .btn-link-blue-light {
   color: #8a98a7 !important;
   background: transparent;
 }
-/* line 84, ../sass/styles.scss */
+/* line 90, ../sass/styles.scss */
 .btn-link-blue-light:hover {
   text-decoration: none;
 }
 
-/* line 89, ../sass/styles.scss */
+/* line 95, ../sass/styles.scss */
 .btn-link-gray-light {
   color: #f3f3f3 !important;
   background: transparent;
 }
-/* line 92, ../sass/styles.scss */
+/* line 98, ../sass/styles.scss */
 .btn-link-gray-light:hover {
   color: #3e454c !important;
   text-decoration: none;
 }
 
-/* line 98, ../sass/styles.scss */
+/* line 104, ../sass/styles.scss */
 .blue-light {
   color: #8a98a7 !important;
 }
 
-/* line 102, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 .blue-medium {
   color: #6a7783 !important;
 }
 
-/* line 106, ../sass/styles.scss */
+/* line 112, ../sass/styles.scss */
 .blue-dark {
   color: #3e454c !important;
 }
 
-/* line 110, ../sass/styles.scss */
+/* line 116, ../sass/styles.scss */
 .orange {
   color: #ff7f66 !important;
 }
@@ -11052,88 +10804,23 @@ td.active.day .day-indicator {
 /*------------------------------------------------------------------------------------
   Nav Bar
 ------------------------------------------------------------------------------------*/
-/* line 117, ../sass/styles.scss */
+/* line 123, ../sass/styles.scss */
 .navbar-brand > img {
   display: inline-block;
 }
 
-/* line 123, ../sass/styles.scss */
+/* line 129, ../sass/styles.scss */
 .navbar .btn-warning:hover {
   background-color: #ff5433 !important;
 }
 
-/* line 129, ../sass/styles.scss */
+/* line 135, ../sass/styles.scss */
 ul.nav {
   margin-top: 9px;
 }
 
-/* line 133, ../sass/styles.scss */
+/* line 139, ../sass/styles.scss */
 .navbar-nav > li > a {
   padding-top: 5px;
   padding-bottom: 5px;
-}
-
-/*------------------------------------------------------------------------------------
-  Landing Page
-------------------------------------------------------------------------------------*/
-/* line 141, ../sass/styles.scss */
-.content {
-  background-color: #fff;
-  padding: 20px;
-  margin: 0 -20px;
-  /* negative indent the amount of the padding to maintain the grid system */
-  -webkit-border-radius: 0 0 6px 6px;
-  -moz-border-radius: 0 0 6px 6px;
-  border-radius: 0 0 6px 6px;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-}
-
-/* line 152, ../sass/styles.scss */
-#welcome {
-  text-align: center;
-}
-/* line 154, ../sass/styles.scss */
-#welcome.well {
-  background-color: transparent;
-}
-/* line 158, ../sass/styles.scss */
-#welcome .hero-unit {
-  background: url(/images/bg.png);
-  padding: 40px;
-  border-radius: 4px;
-}
-/* line 164, ../sass/styles.scss */
-#welcome h1 {
-  margin-bottom: 40px;
-  font-size: 60px;
-  font-weight: bold;
-}
-/* line 170, ../sass/styles.scss */
-#welcome .screenshots-wrapper {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-/* line 173, ../sass/styles.scss */
-#welcome .screenshots-wrapper .screenshot {
-  width: 300px;
-  height: 200px;
-  margin: 10px;
-  box-shadow: 0px 0px 10px #888;
-  -moz-box-shadow: 0px 0px 10px #888;
-  -webkit-box-shadow: 0px 0px 10px #888;
-}
-/* line 183, ../sass/styles.scss */
-#welcome .landing-cta-wrapper {
-  position: relative;
-  height: 150px;
-}
-/* line 187, ../sass/styles.scss */
-#welcome .landing-cta {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }

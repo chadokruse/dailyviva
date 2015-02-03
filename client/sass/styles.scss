@@ -6,8 +6,6 @@
 @import "datepicker";
 @import "sweet-alert";
 
-@import "_views/calendar";
-
 /*------------------------------------------------------------------------------------
   Mixins
 ------------------------------------------------------------------------------------*/
@@ -21,6 +19,13 @@
 }
 
 /*------------------------------------------------------------------------------------
+  Views
+------------------------------------------------------------------------------------*/
+
+@import "_views/home";
+@import "_views/calendar";
+
+/*------------------------------------------------------------------------------------
   Bootstrap 3 Bugs
 ------------------------------------------------------------------------------------*/
 
@@ -31,6 +36,11 @@
 /*------------------------------------------------------------------------------------
   Global
 ------------------------------------------------------------------------------------*/
+body {
+  background: url('/images/bg-gradient.jpg');
+  background-size: cover;
+}
+
 #iron-router-progress {
   background-color : $orange;
   box-shadow       : 0 0 5px $orange;
@@ -42,10 +52,6 @@
 
 .hidden {
   display: none !important;
-}
-
-.well-landing {
-  background: url(/images/bg.png);
 }
 
 .btn-primary {
@@ -133,58 +139,4 @@ ul.nav {
 .navbar-nav > li > a {
   padding-top: 5px;
   padding-bottom: 5px;
-}
-
-/*------------------------------------------------------------------------------------
-  Landing Page
-------------------------------------------------------------------------------------*/
-.content {
-  background-color: #fff;
-  padding: 20px;
-  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
-  -webkit-border-radius: 0 0 6px 6px;
-  -moz-border-radius: 0 0 6px 6px;
-  border-radius: 0 0 6px 6px;
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-  box-shadow: 0 1px 2px rgba(0,0,0,.15);
-}
-#welcome {
-  text-align: center;
-  &.well {
-    background-color: transparent;
-  }
-
-  .hero-unit {
-    background: url(/images/bg.png);
-    padding: 40px;
-    border-radius: 4px;
-  }
-
-  h1 {
-    margin-bottom: 40px;
-    font-size: 60px;
-    font-weight: bold;
-  }
-
-  .screenshots-wrapper {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    .screenshot {
-      width: 300px;
-      height: 200px;
-      margin: 10px;
-      box-shadow: 0px 0px 10px #888;
-      -moz-box-shadow: 0px 0px 10px #888;
-      -webkit-box-shadow: 0px 0px 10px #888;
-    }
-  }
-
-  .landing-cta-wrapper {
-    position: relative;
-    height: 150px; //bit 'o hackness
-  }
-  .landing-cta {
-    @include vertical-align();
-  }
 }

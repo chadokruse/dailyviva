@@ -1,14 +1,133 @@
 /*------------------------------------------------------------------------------------
-  General Styles
+  Selector Buttons
 ------------------------------------------------------------------------------------*/
-body {
-  background: url('/images/bg-gradient.jpg');
-  background-size: cover;
-}
-.title{
+.selectors-wrapper {
   margin:0 auto;
-  //width:700px;
   text-align:center;
+}
+
+.title{
+  margin-top:30px;
+  font-size:20px;
+  text-transform:uppercase;
+  letter-spacing:3px;
+  a {
+    font-size: 13px;
+    text-transform: none;
+    letter-spacing: normal;
+  }
+  .btn-group {
+    .btn {
+      margin-left: 5px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+       border-radius: 4px;
+    }
+    .btn-large {
+      margin-left: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+       border-radius: 5px;
+    }
+    .btn-daily {
+      margin-left: 0;
+      margin-right: 5px;
+    }
+  }
+}
+
+.selectors-wrapper {
+  .btn-group {
+    display: inline;
+  }
+  input[type=radio] {
+  position: absolute;
+  clip: rect(0,0,0,0);
+  pointer-events: none;
+  }
+}
+
+.subtitle{
+  text-transform:uppercase;
+  font-size:11px;
+  color: $blue-light;
+}
+
+.btn {
+  &.daily-selectors, &.occasional-selectors {
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    //border: 2px solid #eee;
+    font-size: 13px;
+    text-transform: none;
+    &.active {
+      box-shadow: none;
+      -webkit-box-shadow: none;
+    }
+  }
+}
+
+.occasional-selectors {
+  text-align: right;
+  float: right;
+  a.btn, button.btn {
+    text-align: right;
+  }
+}
+
+/*------------------------------------------------------------------------------------
+  Calendar Styles (Month View)
+------------------------------------------------------------------------------------*/
+
+#calendar {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: $gray-light;
+  font-size:24px;
+  border-top:2px solid #eee;
+  line-height: normal !important;
+  border-radius: 5px;
+  border: 2px solid $blue-light;
+}
+
+#calendar table {
+  //width:700px;
+  border-spacing:none !important;
+  border-collapse:collapse;
+}
+
+#calendar table td .btn, #calendar table td {
+  position:relative;
+  text-align:center;
+  font-size:24px;
+  font-weight:bold;
+  width:100px;
+  height:60px;
+}
+
+#calendar table td.otherMonth .btn, #calendar table td.otherMonth {
+  color:#ccc;
+}
+
+#calendar tbody td.btn {
+  display: table-cell;
+  -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+          border-radius: 0px;
+  &.today {
+    color: #51A351;
+  }
+  &.active {
+    background-color: #e6e6e6;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: none;
+  }
 }
 
 .datepicker-inline {
@@ -49,7 +168,7 @@ tr.dow {
   border-top: 1px solid $gray;
   border-bottom: 1px solid $gray;
 }
-th.dow{
+th.dow {
 width:100px;
 padding:5px 0;
 text-transform:uppercase;
@@ -80,10 +199,8 @@ td.day {
 }
 
 .datepicker table tr td.today, .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover {
-  //border: solid 2px $orange;
   color: white;
   background-color: darken($gray-light, 10%);
-  //border-color: #ffb733;
   -webkit-animation: cc 1s linear 1s infinite alternate;
   animation: cc 1s linear 1s infinite alternate;
 }
@@ -105,7 +222,6 @@ td.day {
 .datepicker table tr td.today:hover, .datepicker table tr td.today:hover:hover, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today.disabled:hover:hover, .datepicker table tr td.today:focus, .datepicker table tr td.today:hover:focus, .datepicker table tr td.today.disabled:focus, .datepicker table tr td.today.disabled:hover:focus, .datepicker table tr td.today:active, .datepicker table tr td.today:hover:active, .datepicker table tr td.today.disabled:active, .datepicker table tr td.today.disabled:hover:active, .datepicker table tr td.today.active, .datepicker table tr td.today:hover.active, .datepicker table tr td.today.disabled.active, .datepicker table tr td.today.disabled:hover.active, .open .dropdown-toggle.datepicker table tr td.today, .open .dropdown-toggle.datepicker table tr td.today:hover, .open .dropdown-toggle.datepicker table tr td.today.disabled, .open .dropdown-toggle.datepicker table tr td.today.disabled:hover {
   color: white;
   background-color: darken($gray-light, 5%);
-  //border-color: #f59e00;
 }
 
 .datepicker table tr td.day:hover, .datepicker table tr td.day.focused {
@@ -114,7 +230,6 @@ td.day {
 }
 
 .today .day-indicator {
-  //border: 2px solid $orange;
   margin: 0% 15%;
   border-radius: 50%;
 }
@@ -135,338 +250,18 @@ td.active {
 
 .datepicker table tr td.active:hover, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active:focus, .datepicker table tr td.active:hover:focus, .datepicker table tr td.active.disabled:focus, .datepicker table tr td.active.disabled:hover:focus, .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active, .open .dropdown-toggle.datepicker table tr td.active, .open .dropdown-toggle.datepicker table tr td.active:hover, .open .dropdown-toggle.datepicker table tr td.active.disabled, .open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
   background-color: $gray-light;
-  //color: lighten($orange, 20%);
   border-color: white;
   text-shadow: none;
-  //border: 1px solid lighten($orange, 10%);
   font-weight: normal !important;
   font-size: 1em !important;
   border-radius: 0;
 }
 
-
-
-.title{
-  margin-top:30px;
-  font-size:20px;
-  text-transform:uppercase;
-  letter-spacing:3px;
-  a {
-    font-size: 13px;
-    text-transform: none;
-    letter-spacing: normal;
-  }
-  .btn-group {
-    .btn {
-      margin-left: 5px;
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-       border-radius: 4px;
-    }
-    .btn-large {
-      margin-left: 5px;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-       border-radius: 5px;
-    }
-    .btn-daily {
-      margin-left: 0;
-      margin-right: 5px;
-    }
-  }
-}
-
-#selectors {
-  .btn-group {
-    display: inline;
-  }
-  input[type=radio] {
-  position: absolute;
-  clip: rect(0,0,0,0);
-  pointer-events: none;
-  }
-}
-
-.subtitle{
-  text-transform:uppercase;
-  font-size:11px;
-  color: $blue-light;
-}
-
-.btn {
-  &.daily-selectors, &.occasional-selectors {
-    text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    -webkit-text-overflow: ellipsis;
-    max-width: 150px;
-    white-space: nowrap;
-    overflow: hidden;
-    //border: 2px solid #eee;
-    font-size: 13px;
-    text-transform: none;
-    &.active {
-      box-shadow: none;
-      -webkit-box-shadow: none;
-    }
-  }
-}
-
-.blank-state {
-  font-size: 13px;
-  text-transform: none;
-  letter-spacing: normal;
-  cursor: pointer;
-}
-
-.title {
-  &.annual {
-    margin-top:-20px;
-  }
-}
-
-.return {
-  position: relative;
-  top: -20px;
-}
-
-.add-task {
-  text-align: left;
-  padding-top: 16px;
-  float: left;
-}
-
-.occasional-selectors {
-  text-align: right;
-  float: right;
-  a.btn, button.btn {
-    text-align: right;
-  }
-}
-
-#full-year {
-  font-size: 12px;
-  color: blue;
-  text-align: center;
-  padding-top: 20px;
-}
-
-.buy-us-a-beer {
-  margin-top: 50px;
-  text-align: center;
-  text-transform: none;
-  font-size: 13px;
-}
-
-#annual-return {
-  margin: auto 0;
-}
-
-.current_streak, .longest_streak{
-  width:150px;
-  float:left;
-}
-.current_streak, .longest_streak{
-  font-family: Helvetica, Arial, sans-serif;
-  text-transform:none;
-}
-
-#zone {
-  background: #DFDFDF;
-  margin: 5px 0px 10px 0px;
-  padding: 5px 0px 5px 0px;
-  text-align: center;
-}
-
-.type{
-  display:block;
-  font-size:10px;
-  margin-bottom:2px;
-  color:#999;
-  text-transform:uppercase;
-  letter-spacing:0;
-}
-.num{
-  display:block;
-  font-size:30px;
-  font-family: Helvetica, Arial, sans-serif;
-  color:#000;
-  font-weight:bold;
-  letter-spacing:-3px;
-}
-.num .desc{
-  position:relative;
-  top:-8px;
-  left:4px;
-  font-size:11px;
-  letter-spacing:0;
-  color:#999;
-  font-weight:bold;
-}
-
-/* @end */
-
-/*------------------------------------------------------------------------------------
-  @group Homepage
-------------------------------------------------------------------------------------*/
-
-/*#main, #borderedMain{
-  margin:15px auto 30px auto;
-  padding:0 0 20px 0;
-  width:700px;
-  background:#fff;
-}
-
-#borderedMain{
-  border-top:2px solid #000;
-  border-bottom:1px solid #000;
-}
-
-#content{
-  width: 700px;
-}*/
-
-#recentUsers, #userRecords{
-  width:340px;
-}
-
-#recentUsers{
-  float:left;
-  padding-right: 10px;
-}
-
-#userRecords{
-  float:right;
-  padding-left: 10px;
-}
-
-.footnote{
-  font-size:11px;
-  color:#999;
-  font-family: Helvetica, Arial, sans-serif;
-  line-height:16px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-left: 0;
-
-  .footnote-mini {
-    color: #ccc;
-    text-transform: none;
-  }
-}
-.footnote a{
-}
-.footnote a:hover{ text-decoration:underline; }
-
-/* @end */
-
-/*------------------------------------------------------------------------------------
-  Calendar Styles (Month View)
-------------------------------------------------------------------------------------*/
-.center-table {
-  margin: 0 auto !important;
-  float: none !important;
-}
-
-#calendar {
-  margin: 30px 0;
-  padding: 20px;
-  //width:700px;
-  background-color: $gray-light;
-  //background-color: rgba(243,243,243,.8);
-  font-size:24px;
-  border-top:2px solid #eee;
-  //border-bottom:1px solid #eee;
-  line-height: normal !important;
-  border-radius: 5px;
-  border: 2px solid $blue-light;
-}
-
-
-#calendar table{
-  //width:700px;
-  border-spacing:none !important;
-  border-collapse:collapse;
-}
-
-#calendar table td .btn, #calendar table td{
-  position:relative;
-  text-align:center;
-  font-size:24px;
-  font-weight:bold;
-  width:100px;
-  height:60px;
-}
-#calendar table td.otherMonth .btn, #calendar table td.otherMonth{
-  color:#ccc;
-}
-
-#calendar tbody td.btn {
-  display: table-cell;
-  -webkit-border-radius: 0px;
-     -moz-border-radius: 0px;
-          border-radius: 0px;
-  &.today {
-    color: #51A351;
-  }
-  &.active {
-    background-color: #e6e6e6;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    border: none;
-
-
-  /* IE7 inline-block hack */
-  *zoom: 1;
-  padding: 4px 10px 4px;
-  margin-bottom: 0;
-  line-height: 18px;
-  *line-height: 20px;
-  text-align: center;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px solid;
-  *border: 0;
-  border-bottom-color: #b3b3b3;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 00px;
-  *margin-left: .3em;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  color: rgba(255, 255, 255, 0.75);
-  border-color: #ccc;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  background-color: #da4e49;
-  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: -ms-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
-  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: linear-gradient(top, #ee5f5b, #bd362f);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEE5F5B', endColorstr='#FFBD362F', GradientType=0);
-  border-color: #bd362f #bd362f #802420;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
-  *background-color: #bd362f;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-    &:hover {
-    background-image: none;
-    filter: inherit;
-    box-shadow: inherit;
-    }
-  }
-}
-
-/* @end */
-
 /*------------------------------------------------------------------------------------
   Calendar Styles (Yearly View)
 ------------------------------------------------------------------------------------*/
 
-#annual{
+#annual {
   margin:30px auto 15px auto;
   padding:0 0 20px 0;
   font-size:12px;
@@ -477,14 +272,14 @@ td.active {
   line-height: normal !important;
 }
 
-#annual table{
+#annual table {
   width:100px;
   margin: 0 5px;
   border-spacing:none !important;
   border-collapse:collapse;
 }
 
-#annual table th.monthName{
+#annual table th.monthName {
   padding:10px 0;
   font-size:18px;
   letter-spacing:5px;
@@ -492,13 +287,14 @@ td.active {
   color:#005580;
 }
 
-#annual table td .btn, #annual table td{
+#annual table td .btn, #annual table td {
   position:relative;
   text-align:center;
   font-weight:bold;
   vertical-align: top;
 }
-#annual table td.otherMonth .btn, #annual table td.otherMonth{
+
+#annual table td.otherMonth .btn, #annual table td.otherMonth {
   color:#ccc;
   vertical-align: middle;
 }
@@ -510,49 +306,6 @@ td.active {
           border-radius: 0px;
   &.today {
     color: #51A351;
-  }
-  &.active {
-  /* IE7 inline-block hack */
-  *zoom: 1;
-  padding: 4px 10px 4px;
-  margin-bottom: 0;
-  line-height: 18px;
-  *line-height: 20px;
-  text-align: center;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px solid;
-  *border: 0;
-  border-bottom-color: #b3b3b3;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 00px;
-  *margin-left: .3em;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  color: rgba(255, 255, 255, 0.75);
-  border-color: #ccc;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  background-color: #da4e49;
-  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: -ms-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
-  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: linear-gradient(top, #ee5f5b, #bd362f);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEE5F5B', endColorstr='#FFBD362F', GradientType=0);
-  border-color: #bd362f #bd362f #802420;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
-  *background-color: #bd362f;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-    &:hover {
-    background-image: none;
-    filter: inherit;
-    box-shadow: inherit;
-    }
   }
 }
 
@@ -573,41 +326,5 @@ td.active {
   abbr[title] {
     cursor: default;
     border: none;
-  }
-}
-
-/*------------------------------------------------------------------------------------
-  @group X Styles
-------------------------------------------------------------------------------------*/
-
-.otherMonth .xmarksthespot{
-  opacity:0.2;
-}
-
-.xmarksthespot{
-  width:100px;
-  height:60px;
-  position:relative;
-  float:left;
-  margin-top:-60px;
-  z-index:100;
-  background:url(../images/x_1.png) 60% 100% no-repeat;
-}
-
-.x-1{ background-image:url(../images/x_1.png);}
-.x-2{ background-image:url(../images/x_2.png);}
-.x-3{ background-image:url(../images/x_3.png);}
-
-.today {
-  color: green;
-}
-/* @end */
-
-/*------------------------------------------------------------------------------------
-  Add or Edit (Settings Page)
-------------------------------------------------------------------------------------*/
-#settings {
-  .form-horizontal .controls, .control-label {
-    margin-top: 20px;
   }
 }
