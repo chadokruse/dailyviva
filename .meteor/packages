@@ -9,3 +9,4 @@ natestrauser:font-awesome
 iron:router
 multiply:iron-router-progress
 momentjs:moment
+zimme:iron-router-active
