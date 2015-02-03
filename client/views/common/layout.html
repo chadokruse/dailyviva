@@ -53,8 +53,11 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li class="js-login"><a class="btn btn btn-link blue-light">Login</a></li>
-          <li class="{{isActiveRoute regex='guest' className='hidden'}}"><a href="{{pathFor route='guest'}}" class="btn btn btn-primary">Get Started</a></li>
+          {{#if isActiveRoute regex='guest'}}
+          <li class="small blue-light"><em>As they say in<br>Australia, onya!</em></li>
+          {{/if}}
+          <li class="js-login {{isActiveRoute regex='guest' className='hidden'}}"><a class="btn btn btn-link blue-light">Login</a></li>
+          <li class="{{isActiveRoute regex='guest' className='hidden'}}"><a href="{{pathFor route='guest'}}" class="btn btn btn-warning">Try it Out</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
