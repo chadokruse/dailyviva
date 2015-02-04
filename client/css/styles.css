@@ -10610,6 +10610,11 @@ td.active.day .day-indicator {
 }
 
 /* line 251, ../sass/_views/_calendar.scss */
+.today {
+  background-color: #d9d9d9 !important;
+}
+
+/* line 255, ../sass/_views/_calendar.scss */
 .datepicker table tr td.active:hover, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active:focus, .datepicker table tr td.active:hover:focus, .datepicker table tr td.active.disabled:focus, .datepicker table tr td.active.disabled:hover:focus, .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active, .open .dropdown-toggle.datepicker table tr td.active, .open .dropdown-toggle.datepicker table tr td.active:hover, .open .dropdown-toggle.datepicker table tr td.active.disabled, .open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
   background-color: #f3f3f3;
   border-color: white;
@@ -10622,7 +10627,7 @@ td.active.day .day-indicator {
 /*------------------------------------------------------------------------------------
   Calendar Styles (Yearly View)
 ------------------------------------------------------------------------------------*/
-/* line 264, ../sass/_views/_calendar.scss */
+/* line 268, ../sass/_views/_calendar.scss */
 #annual {
   margin: 30px auto 15px auto;
   padding: 0 0 20px 0;
@@ -10634,7 +10639,7 @@ td.active.day .day-indicator {
   line-height: normal !important;
 }
 
-/* line 275, ../sass/_views/_calendar.scss */
+/* line 279, ../sass/_views/_calendar.scss */
 #annual table {
   width: 100px;
   margin: 0 5px;
@@ -10642,7 +10647,7 @@ td.active.day .day-indicator {
   border-collapse: collapse;
 }
 
-/* line 282, ../sass/_views/_calendar.scss */
+/* line 286, ../sass/_views/_calendar.scss */
 #annual table th.monthName {
   padding: 10px 0;
   font-size: 18px;
@@ -10651,7 +10656,7 @@ td.active.day .day-indicator {
   color: #005580;
 }
 
-/* line 290, ../sass/_views/_calendar.scss */
+/* line 294, ../sass/_views/_calendar.scss */
 #annual table td .btn, #annual table td {
   position: relative;
   text-align: center;
@@ -10659,25 +10664,25 @@ td.active.day .day-indicator {
   vertical-align: top;
 }
 
-/* line 297, ../sass/_views/_calendar.scss */
+/* line 301, ../sass/_views/_calendar.scss */
 #annual table td.otherMonth .btn, #annual table td.otherMonth {
   color: #ccc;
   vertical-align: middle;
 }
 
-/* line 302, ../sass/_views/_calendar.scss */
+/* line 306, ../sass/_views/_calendar.scss */
 #annual tbody td.btn {
   display: table-cell;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 307, ../sass/_views/_calendar.scss */
+/* line 311, ../sass/_views/_calendar.scss */
 #annual tbody td.btn.today {
   color: #51A351;
 }
 
-/* line 313, ../sass/_views/_calendar.scss */
+/* line 317, ../sass/_views/_calendar.scss */
 #annual tr.dayName th {
   width: 100px;
   padding: 5px 0;
@@ -10690,7 +10695,7 @@ td.active.day .day-indicator {
   border-left: none;
   border-right: none;
 }
-/* line 326, ../sass/_views/_calendar.scss */
+/* line 330, ../sass/_views/_calendar.scss */
 #annual tr.dayName abbr[title] {
   cursor: default;
   border: none;
