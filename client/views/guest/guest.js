@@ -47,6 +47,9 @@ Template.guest.events({
       return false;
     }
   },
+  'blur [contenteditable]': function (e) {
+    $(e.target).attr('contenteditable', false);
+  },
   'click .js-add': function (e) {
     swal({
       title: 'Easy Tiger!',
