@@ -162,6 +162,11 @@ th.prev, th.next {
   letter-spacing:5px;
   text-transform:uppercase;
   color: $blue-medium;
+  //@media (max-width: $screen-xs-max) {
+    @media (max-width: 600px) {
+    font-size: .6em;
+    font-weight: bold;
+  }
 }
 
 tr.dow {

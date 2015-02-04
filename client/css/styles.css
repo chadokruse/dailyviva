@@ -10504,14 +10504,21 @@ th.prev:hover, th.next:hover {
   text-transform: uppercase;
   color: #6a7783;
 }
+@media (max-width: 600px) {
+  /* line 159, ../sass/_views/_calendar.scss */
+  .datepicker-switch {
+    font-size: .6em;
+    font-weight: bold;
+  }
+}
 
-/* line 167, ../sass/_views/_calendar.scss */
+/* line 172, ../sass/_views/_calendar.scss */
 tr.dow {
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
 }
 
-/* line 171, ../sass/_views/_calendar.scss */
+/* line 176, ../sass/_views/_calendar.scss */
 th.dow {
   width: 100px;
   padding: 5px 0;
@@ -10524,30 +10531,30 @@ th.dow {
   border-right: none;
 }
 
-/* line 183, ../sass/_views/_calendar.scss */
+/* line 188, ../sass/_views/_calendar.scss */
 span.month.active {
   background-color: #8a98a7;
 }
 
-/* line 187, ../sass/_views/_calendar.scss */
+/* line 192, ../sass/_views/_calendar.scss */
 td.day {
   color: #3e454c;
 }
-/* line 189, ../sass/_views/_calendar.scss */
+/* line 194, ../sass/_views/_calendar.scss */
 td.day:hover {
   color: #3e454c;
 }
 
-/* line 194, ../sass/_views/_calendar.scss */
+/* line 199, ../sass/_views/_calendar.scss */
 .datepicker table tr td.old, .datepicker table tr td.new {
   color: #cccccc;
 }
-/* line 196, ../sass/_views/_calendar.scss */
+/* line 201, ../sass/_views/_calendar.scss */
 .datepicker table tr td.old:hover, .datepicker table tr td.new:hover {
   color: #3e454c;
 }
 
-/* line 201, ../sass/_views/_calendar.scss */
+/* line 206, ../sass/_views/_calendar.scss */
 .datepicker table tr td.today, .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover {
   color: white;
   background-color: #d9d9d9;
@@ -10577,29 +10584,29 @@ td.day:hover {
     color: white;
   }
 }
-/* line 222, ../sass/_views/_calendar.scss */
+/* line 227, ../sass/_views/_calendar.scss */
 .datepicker table tr td.today:hover, .datepicker table tr td.today:hover:hover, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today.disabled:hover:hover, .datepicker table tr td.today:focus, .datepicker table tr td.today:hover:focus, .datepicker table tr td.today.disabled:focus, .datepicker table tr td.today.disabled:hover:focus, .datepicker table tr td.today:active, .datepicker table tr td.today:hover:active, .datepicker table tr td.today.disabled:active, .datepicker table tr td.today.disabled:hover:active, .datepicker table tr td.today.active, .datepicker table tr td.today:hover.active, .datepicker table tr td.today.disabled.active, .datepicker table tr td.today.disabled:hover.active, .open .dropdown-toggle.datepicker table tr td.today, .open .dropdown-toggle.datepicker table tr td.today:hover, .open .dropdown-toggle.datepicker table tr td.today.disabled, .open .dropdown-toggle.datepicker table tr td.today.disabled:hover {
   color: white;
   background-color: #e6e6e6;
 }
 
-/* line 227, ../sass/_views/_calendar.scss */
+/* line 232, ../sass/_views/_calendar.scss */
 .datepicker table tr td.day:hover, .datepicker table tr td.day.focused {
   background: #e6e6e6;
   cursor: pointer;
 }
 
-/* line 232, ../sass/_views/_calendar.scss */
+/* line 237, ../sass/_views/_calendar.scss */
 .today .day-indicator {
   margin: 0% 15%;
   border-radius: 50%;
 }
 
-/* line 237, ../sass/_views/_calendar.scss */
+/* line 242, ../sass/_views/_calendar.scss */
 td.active {
   background-color: #ff7f66;
 }
-/* line 240, ../sass/_views/_calendar.scss */
+/* line 245, ../sass/_views/_calendar.scss */
 td.active.day .day-indicator {
   background-color: #ff7f66;
   color: white;
@@ -10609,12 +10616,12 @@ td.active.day .day-indicator {
   font-size: .6em;
 }
 
-/* line 251, ../sass/_views/_calendar.scss */
+/* line 256, ../sass/_views/_calendar.scss */
 .today {
   background-color: #d9d9d9 !important;
 }
 
-/* line 255, ../sass/_views/_calendar.scss */
+/* line 260, ../sass/_views/_calendar.scss */
 .datepicker table tr td.active:hover, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active:focus, .datepicker table tr td.active:hover:focus, .datepicker table tr td.active.disabled:focus, .datepicker table tr td.active.disabled:hover:focus, .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active, .open .dropdown-toggle.datepicker table tr td.active, .open .dropdown-toggle.datepicker table tr td.active:hover, .open .dropdown-toggle.datepicker table tr td.active.disabled, .open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
   background-color: #f3f3f3;
   border-color: white;
@@ -10627,7 +10634,7 @@ td.active.day .day-indicator {
 /*------------------------------------------------------------------------------------
   Calendar Styles (Yearly View)
 ------------------------------------------------------------------------------------*/
-/* line 268, ../sass/_views/_calendar.scss */
+/* line 273, ../sass/_views/_calendar.scss */
 #annual {
   margin: 30px auto 15px auto;
   padding: 0 0 20px 0;
@@ -10639,7 +10646,7 @@ td.active.day .day-indicator {
   line-height: normal !important;
 }
 
-/* line 279, ../sass/_views/_calendar.scss */
+/* line 284, ../sass/_views/_calendar.scss */
 #annual table {
   width: 100px;
   margin: 0 5px;
@@ -10647,7 +10654,7 @@ td.active.day .day-indicator {
   border-collapse: collapse;
 }
 
-/* line 286, ../sass/_views/_calendar.scss */
+/* line 291, ../sass/_views/_calendar.scss */
 #annual table th.monthName {
   padding: 10px 0;
   font-size: 18px;
@@ -10656,7 +10663,7 @@ td.active.day .day-indicator {
   color: #005580;
 }
 
-/* line 294, ../sass/_views/_calendar.scss */
+/* line 299, ../sass/_views/_calendar.scss */
 #annual table td .btn, #annual table td {
   position: relative;
   text-align: center;
@@ -10664,25 +10671,25 @@ td.active.day .day-indicator {
   vertical-align: top;
 }
 
-/* line 301, ../sass/_views/_calendar.scss */
+/* line 306, ../sass/_views/_calendar.scss */
 #annual table td.otherMonth .btn, #annual table td.otherMonth {
   color: #ccc;
   vertical-align: middle;
 }
 
-/* line 306, ../sass/_views/_calendar.scss */
+/* line 311, ../sass/_views/_calendar.scss */
 #annual tbody td.btn {
   display: table-cell;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 311, ../sass/_views/_calendar.scss */
+/* line 316, ../sass/_views/_calendar.scss */
 #annual tbody td.btn.today {
   color: #51A351;
 }
 
-/* line 317, ../sass/_views/_calendar.scss */
+/* line 322, ../sass/_views/_calendar.scss */
 #annual tr.dayName th {
   width: 100px;
   padding: 5px 0;
@@ -10695,7 +10702,7 @@ td.active.day .day-indicator {
   border-left: none;
   border-right: none;
 }
-/* line 330, ../sass/_views/_calendar.scss */
+/* line 335, ../sass/_views/_calendar.scss */
 #annual tr.dayName abbr[title] {
   cursor: default;
   border: none;
@@ -10704,7 +10711,7 @@ td.active.day .day-indicator {
 /*------------------------------------------------------------------------------------
   Below Calendar
 ------------------------------------------------------------------------------------*/
-/* line 339, ../sass/_views/_calendar.scss */
+/* line 344, ../sass/_views/_calendar.scss */
 .faq {
   font-style: italic;
   color: #6a7783;
@@ -10717,56 +10724,62 @@ td.active.day .day-indicator {
 .navbar-nav.navbar-right:last-child {
   margin-right: 0;
 }
+@media (max-width: 767px) {
+  /* line 32, ../sass/styles.scss */
+  .navbar-nav.navbar-right:last-child {
+    margin-left: 0;
+  }
+}
 
 /*------------------------------------------------------------------------------------
   Global
 ------------------------------------------------------------------------------------*/
-/* line 39, ../sass/styles.scss */
+/* line 43, ../sass/styles.scss */
 body {
   background: url("/images/bg-gradient.jpg");
   background-size: cover;
 }
 
-/* line 44, ../sass/styles.scss */
+/* line 48, ../sass/styles.scss */
 #iron-router-progress {
   background-color: #ff7f66;
   box-shadow: 0 0 5px #ff7f66;
 }
 
-/* line 49, ../sass/styles.scss */
+/* line 53, ../sass/styles.scss */
 #iron-router-progress.spinner:before {
   border-color: #ff7f66;
 }
 
-/* line 53, ../sass/styles.scss */
+/* line 57, ../sass/styles.scss */
 .hidden {
   display: none !important;
 }
 
-/* line 58, ../sass/styles.scss */
+/* line 62, ../sass/styles.scss */
 .btn-primary:hover {
   background-color: #ff7f66 !important;
   border-color: transparent !important;
 }
 
-/* line 65, ../sass/styles.scss */
+/* line 69, ../sass/styles.scss */
 .btn-link:hover {
   color: #ff7f66 !important;
 }
 
-/* line 70, ../sass/styles.scss */
+/* line 74, ../sass/styles.scss */
 .btn-dailyviva {
   border: 2px solid #6a7783;
   background-color: transparent;
   color: #6a7783;
 }
-/* line 74, ../sass/styles.scss */
+/* line 78, ../sass/styles.scss */
 .btn-dailyviva:hover {
   border: 2px solid #2c3136;
   background-color: #3e454c;
   color: white;
 }
-/* line 79, ../sass/styles.scss */
+/* line 83, ../sass/styles.scss */
 .btn-dailyviva.active {
   border: 2px solid #2c3136;
   background-color: #3e454c;
@@ -10774,43 +10787,43 @@ body {
   cursor: default;
 }
 
-/* line 87, ../sass/styles.scss */
+/* line 91, ../sass/styles.scss */
 .btn-link-blue-light {
   color: #8a98a7 !important;
   background: transparent;
 }
-/* line 90, ../sass/styles.scss */
+/* line 94, ../sass/styles.scss */
 .btn-link-blue-light:hover {
   text-decoration: none;
 }
 
-/* line 95, ../sass/styles.scss */
+/* line 99, ../sass/styles.scss */
 .btn-link-gray-light {
   color: #f3f3f3 !important;
   background: transparent;
 }
-/* line 98, ../sass/styles.scss */
+/* line 102, ../sass/styles.scss */
 .btn-link-gray-light:hover {
   color: #3e454c !important;
   text-decoration: none;
 }
 
-/* line 104, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 .blue-light {
   color: #8a98a7 !important;
 }
 
-/* line 108, ../sass/styles.scss */
+/* line 112, ../sass/styles.scss */
 .blue-medium {
   color: #6a7783 !important;
 }
 
-/* line 112, ../sass/styles.scss */
+/* line 116, ../sass/styles.scss */
 .blue-dark {
   color: #3e454c !important;
 }
 
-/* line 116, ../sass/styles.scss */
+/* line 120, ../sass/styles.scss */
 .orange {
   color: #ff7f66 !important;
 }
@@ -10818,23 +10831,28 @@ body {
 /*------------------------------------------------------------------------------------
   Nav Bar
 ------------------------------------------------------------------------------------*/
-/* line 123, ../sass/styles.scss */
+/* line 127, ../sass/styles.scss */
 .navbar-brand > img {
   display: inline-block;
 }
 
-/* line 129, ../sass/styles.scss */
+/* line 133, ../sass/styles.scss */
 .navbar .btn-warning:hover {
   background-color: #ff5433 !important;
 }
 
-/* line 135, ../sass/styles.scss */
+/* line 139, ../sass/styles.scss */
 ul.nav {
   margin-top: 9px;
 }
 
-/* line 139, ../sass/styles.scss */
+/* line 143, ../sass/styles.scss */
 .navbar-nav > li > a {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+/* line 148, ../sass/styles.scss */
+.header-tagline {
+  text-align: center;
 }

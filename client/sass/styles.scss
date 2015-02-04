@@ -30,7 +30,11 @@
 ------------------------------------------------------------------------------------*/
 
 .navbar-nav.navbar-right:last-child {
-    margin-right: 0;
+  margin-right: 0;
+
+  @media (max-width: $screen-xs-max) {
+    margin-left: 0;
+  }
 }
 
 /*------------------------------------------------------------------------------------
@@ -139,4 +143,8 @@ ul.nav {
 .navbar-nav > li > a {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.header-tagline {
+  text-align: center;
 }
